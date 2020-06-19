@@ -5,6 +5,20 @@ import credentials
 from tweepy import API
 from tweepy import Cursor
 
+class twitter_client():
+
+	def __init__(self):
+		self.auth = authenticator().authenticate_twitter_app()
+		self.twitter_client = API(self.auth)
+
+	def get_user_timeline_tweets(self,num_tweets):
+		tweets = []
+		for tweet in Cursor(self.twitter_client.user_timeline).items(num_tweets):
+			tweets.append(tweet)
+		return tweets
+
+
+
 class authenticator():
 
 	def authenticate_twitter_app(self):
@@ -17,7 +31,7 @@ class authenticator():
 class twitter_streamer():
 	" Class for streaming and processing live tweets"
 
-	def _init__(self):
+	def __init__(self):
 		self.twitter_authenticator = authenticator()
 
 	def stream_tweets(self, fetched_data_file, hashtag_list):
@@ -50,5 +64,7 @@ if __name__ =='__main__':
 	hashtag_list = ["MAGA2020"]
 	fetched_data_file = "test.json"
 
-	twitter = twitter_streamer()
-	twitter.stream_tweets(fetched_data_file, hashtag_list)
+	#twitter = twitter_streamer()
+	#twitter.stream_tweets(fetched_data_file, hashtag_list)
+	client = twitter_client()
+	print(client.get_user_timeline_tweets(1))
