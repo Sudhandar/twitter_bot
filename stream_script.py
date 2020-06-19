@@ -2,19 +2,32 @@ from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
 import credentials
+from tweepy import API
+from tweepy import Cursor
+
+class authenticator():
+
+	def authenticate_twitter_app(self):
+
+		auth = OAuthHandler(credentials.CONSUMER_KEY, credentials.CONSUMER_KEY_SECRET)
+		auth.set_access_token(credentials.ACCESS_TOKEN, credentials.ACCESS_TOKEN_SECRET)
+		return auth
+
 
 class twitter_streamer():
 	" Class for streaming and processing live tweets"
 
+	def _init__(self):
+		self.twitter_authenticator = authenticator()
+
 	def stream_tweets(self, fetched_data_file, hashtag_list):
-		listener = stdout_listener(fetched_data_file)
-		auth = OAuthHandler(credentials.CONSUMER_KEY, credentials.CONSUMER_KEY_SECRET)
-		auth.set_access_token(credentials.ACCESS_TOKEN, credentials.ACCESS_TOKEN_SECRET)
+		listener = tweet_listener(fetched_data_file)
+		auth = self.twitter_authenticator.authenticate_twitter_app()
 		stream = Stream(auth, listener)
 		stream.filter(track = hashtag_list)
 
 
-class stdout_listener(StreamListener):
+class tweet_listener(StreamListener):
 
 	def __init__(self, fetched_data_file):
 		self.fetched_data_file = fetched_data_file
