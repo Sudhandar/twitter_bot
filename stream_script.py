@@ -4,6 +4,8 @@ from tweepy import Stream
 import credentials
 from tweepy import API
 from tweepy import Cursor
+import pandas as pd 
+import numpy as np
 
 class twitter_client():
 
@@ -11,6 +13,9 @@ class twitter_client():
 		self.auth = authenticator().authenticate_twitter_app()
 		self.twitter_client = API(self.auth)
 		self.twitter_user = twitter_user
+
+	def get_twitter_clinet_api(self):
+		return self.twitter_client
 
 	def get_user_timeline_tweets(self,num_tweets):
 		tweets = []
@@ -26,7 +31,7 @@ class twitter_client():
 
 	def get_home_timeline_tweets(self, num_tweets):
 		home_timeline_tweets = []
-		for tweet in Cursor(self.twitter_client.home_timeline, id = self.twitter_user).items(num_tweets)
+		for tweet in Cursor(self.twitter_client.home_timeline, id = self.twitter_user).items(num_tweets):
 			home_timeline_tweets.append(tweet)
 		return home_timeline_tweets
 
@@ -71,11 +76,3 @@ class tweet_listener(StreamListener):
 		print(status)
 
 if __name__ =='__main__':
-
-	hashtag_list = ["MAGA2020"]
-	fetched_data_file = "test.json"
-
-	#twitter = twitter_streamer()
-	#twitter.stream_tweets(fetched_data_file, hashtag_list)
-	client = twitter_client()
-	print(client.get_user_timeline_tweets(1))
