@@ -7,6 +7,8 @@ from tweepy import Cursor
 import pandas as pd 
 import numpy as np
 import matplotlib.pyplot as plt
+import re
+from textblob import TextBlob
 
 class twitter_client():
 
@@ -78,6 +80,19 @@ class tweet_listener(StreamListener):
 
 class tweet_analyzer():
 
+	def clean_tweet(self, tweet):
+		return ' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)", " ", tweet).split())
+
+	def analyze_sentiment(self, tweet):
+		analysis = TextBlob(self.clean_tweet(tweet))
+
+		if analysis.sentiment.polarity > 0:
+			return "Positive"
+		elif analysis.sentiment.polarity == 0:
+			return "Neutral"
+		else:
+			return "Negative"
+
 	def tweets_to_dataframe(self, tweets):
 		df = pd.DataFrame(data = [tweet.text for tweet in tweets], columns = ['tweet'])
 		df['id'] = np.array([tweet.id for tweet in tweets])
@@ -91,6 +106,7 @@ class tweet_analyzer():
 		df['tagged_user'] = np.array([tweet.entities['user_mentions'][0]['screen_name'] if len(tweet.entities['user_mentions'])!=0 else '-' for tweet in tweets])
 		df['tagged_user_name'] = np.array([tweet.entities['user_mentions'][0]['name'] if len(tweet.entities['user_mentions'])!=0 else '-' for tweet in tweets])
 		df['is_retweet'] = np.where(df['tweet'].str[:2] == 'RT',1,0)
+		df['sentiment'] = np.array([self.analyze_sentiment(tweet) for tweet in df['tweet']])
 
 		return df
 
@@ -100,7 +116,7 @@ if __name__ =='__main__':
 	client = twitter_client()
 	analyzer = tweet_analyzer()
 	api = client.get_twitter_client_api()
-	tweets = api.user_timeline(screen_name="realDonaldTrump", count=20)
+	tweets = api.user_timeline(screen_name="realDonaldTrump", count=200)
 	df = analyzer.tweets_to_dataframe(tweets)
 
 	time_likes = pd.Series(data=df['likes'].values, index=df['date'])
@@ -109,6 +125,7 @@ if __name__ =='__main__':
 	time_retweets = pd.Series(data=df['retweets'].values, index=df['date'])
 	time_retweets.plot(figsize=(16, 4), label="retweets", legend=True)
 	plt.show()
-    
+	print(df[['tweet','sentiment']])
+
 
 
