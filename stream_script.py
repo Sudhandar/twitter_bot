@@ -6,6 +6,7 @@ from tweepy import API
 from tweepy import Cursor
 import pandas as pd 
 import numpy as np
+import matplotlib.pyplot as plt
 
 class twitter_client():
 
@@ -78,14 +79,18 @@ class tweet_listener(StreamListener):
 class tweet_analyzer():
 
 	def tweets_to_dataframe(self, tweets):
-		df = pd.DataFrame(data = [tweet.text for tweet in tweets], columns = ['tweets'])
+		df = pd.DataFrame(data = [tweet.text for tweet in tweets], columns = ['tweet'])
 		df['id'] = np.array([tweet.id for tweet in tweets])
-		df['len'] = np.array([len([tweet.text]) for tweet in tweets])
+		df['len'] = np.array([len(tweet.text) for tweet in tweets])
 		df['date'] = np.array([tweet.created_at for tweet in tweets])
 		df['source'] = np.array([tweet.source for tweet in tweets])
 		df['likes'] = np.array([tweet.favorite_count for tweet in tweets])
 		df['retweets'] = np.array([tweet.retweet_count for tweet in tweets])
 		df['location'] = np.array([tweet.geo for tweet in tweets])
+		df['hashtags'] = np.array([tweet.entities['hashtags'][0]['text'] if len(tweet.entities['hashtags'])!=0 else '-' for tweet in tweets]) 
+		df['tagged_user'] = np.array([tweet.entities['user_mentions'][0]['screen_name'] if len(tweet.entities['user_mentions'])!=0 else '-' for tweet in tweets])
+		df['tagged_user_name'] = np.array([tweet.entities['user_mentions'][0]['name'] if len(tweet.entities['user_mentions'])!=0 else '-' for tweet in tweets])
+		df['is_retweet'] = np.where(df['tweet'].str[:2] == 'RT',1,0)
 
 		return df
 
@@ -96,7 +101,14 @@ if __name__ =='__main__':
 	analyzer = tweet_analyzer()
 	api = client.get_twitter_client_api()
 	tweets = api.user_timeline(screen_name="realDonaldTrump", count=20)
-	df = tweet_analyzer.tweets_to_dataframe(tweets)
+	df = analyzer.tweets_to_dataframe(tweets)
+
+	time_likes = pd.Series(data=df['likes'].values, index=df['date'])
+	time_likes.plot(figsize=(16, 4), label="likes", legend=True)
+
+	time_retweets = pd.Series(data=df['retweets'].values, index=df['date'])
+	time_retweets.plot(figsize=(16, 4), label="retweets", legend=True)
+	plt.show()
     
 
 
