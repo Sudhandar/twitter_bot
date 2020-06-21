@@ -3,4 +3,8 @@ pandas
 regex
 textblob
 matplotlib
-
+dash
+dash-renderer
+dash-html-components
+dash-core-components
+plotly
