@@ -39,8 +39,8 @@ def update_graph_scatter(n):
 		       database_ip, database_name
 		   )
 		)
-		
-		df = pd.read_sql(sql = "SELECT * FROM sentiment WHERE tweet LIKE '%trump%' ORDER BY unix DESC LIMIT 100", con = database_connection)
+
+		df = pd.read_sql(sql = "SELECT * FROM sentiment ORDER BY unix DESC LIMIT 1000", con = database_connection)
 		df.sort_values('unix', inplace=True)
 		df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
 		df.dropna(inplace=True)
