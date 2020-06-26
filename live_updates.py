@@ -12,6 +12,7 @@ import pandas as pd
 app = dash.Dash(__name__)
 app.layout = html.Div(
     [	html.H2('Live Twitter Sentiment'),
+    	dcc.Input(id ='sentiment_term', value = 'trump', type = 'text'),
         dcc.Graph(id='live-graph', animate=True),
         dcc.Interval(
             id='graph-update',
@@ -22,10 +23,11 @@ app.layout = html.Div(
 )
 
 @app.callback(Output('live-graph', 'figure'),
-        [Input('graph-update', 'n_intervals')])
+		[Input('graph-update', 'n_intervals'),
+		Input(component_id = 'sentiment_term', component_property = 'value')])
 
 
-def update_graph_scatter(n):
+def update_graph_scatter(n, sentiment_term):
 
 	try:
 
@@ -40,7 +42,7 @@ def update_graph_scatter(n):
 		   )
 		)
 
-		df = pd.read_sql(sql = "SELECT * FROM sentiment ORDER BY unix DESC LIMIT 1000", con = database_connection)
+		df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
 		df.sort_values('unix', inplace=True)
 		df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
 		df.dropna(inplace=True)
@@ -48,11 +50,11 @@ def update_graph_scatter(n):
 		X = df.unix.values[-100:]
 		Y = df.sentiment.values[-100:]
 
-		data = plotly.graph_objs.Scatter(
+		data = go.Scatter(
 			    x=list(X),
 			    y=list(Y),
 			    name='Scatter',
-			    mode= 'lines+markers'
+			    mode= 'lines+markers',
 			    )
 
 		return {'data': [data],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
