@@ -2,12 +2,16 @@ import dash
 from dash.dependencies import Output, Input
 import dash_core_components as dcc
 import dash_html_components as html
+from tweepy import API
 import plotly
 import random
 import plotly.graph_objs as go 
 from collections import deque
 import sqlalchemy
 import pandas as pd
+import credentials
+from tweepy import OAuthHandler
+
 
 POS_NEG_NEUT = 0.1
 
@@ -22,6 +26,19 @@ app.layout = html.Div(
             interval= 1*1000,
             n_intervals = 0
         ),
+
+
+		html.Div(children = 'Recent Trends', style = {'textAlign' :'center'}),
+
+
+        html.Div(children = [html.Div(id = 'recent_trends', style = {"word-wrap":"break-word"})]),
+        dcc.Interval(
+        	id = 'trend_interval',
+        	interval = 30*1000,
+        	n_intervals = 0),
+
+		html.Div(children = 'Latest Tweets', style = {'textAlign' :'center'}),
+
         html.Div(children = [html.Div(id = 'recent_tweets_table')]),
         dcc.Interval(
             id='recent_tweets_table_update',
@@ -29,8 +46,7 @@ app.layout = html.Div(
             n_intervals = 0
         ),
         
-
-    ]
+]
 )
 
 def quick_color(s):
@@ -100,7 +116,7 @@ def update_graph_scatter(n, sentiment_term):
 			    x=list(X),
 			    y=list(Y),
 			    name='Scatter',
-			    mode= 'lines+markers',
+			    mode= 'lines',
 			    )
 
 		return {'data': [data],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
@@ -144,5 +160,21 @@ def update_table(n, sentiment_term):
 			f.write(str(e))
 			f.write('\n')
 
+@app.callback(Output('recent_trends', 'children'),
+		[Input('trend_interval', 'n_intervals'),])
+
+
+def recent_trends_df(n):
+
+	auth = OAuthHandler(credentials.CONSUMER_KEY, credentials.CONSUMER_KEY_SECRET)
+	auth.set_access_token(credentials.ACCESS_TOKEN, credentials.ACCESS_TOKEN_SECRET)
+	api = API(auth)
+	trends1 = api.trends_place(23424848)
+	data = trends1[0]['trends']
+	trends = [trend['name'] for trend in data][:10]
+
+	return trends
+
 if __name__ == '__main__':
     app.run_server(debug=True)
+
