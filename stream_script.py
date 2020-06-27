@@ -2,11 +2,14 @@ from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
 import credentials
-from textblob import TextBlob
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import sqlalchemy
 import json
 import pandas as pd
 from unidecode import unidecode
+
+analyzer = SentimentIntensityAnalyzer()
+
 
 database_username = 'root'
 database_password = ''
@@ -21,23 +24,27 @@ database_connection = sqlalchemy.create_engine(
 
 class listener(StreamListener):
 
-    def on_data(self, data):
-        try:
-            data = json.loads(data)
-            tweet = unidecode(data['text'])
-            analyzer = TextBlob(tweet)
-            time_ms = data['timestamp_ms']
-            sentiment = analyzer.sentiment.polarity
-            print(time_ms, tweet, sentiment)
-            df = pd.DataFrame({'unix': [time_ms],'tweet':[tweet], 'sentiment':[sentiment]})
-            df.to_sql('sentiment', con = database_connection, if_exists = 'append', index = False)
+	def on_data(self, data):
+		try:
+			data = json.loads(data)
+			tweet = unidecode(data['text'])
+			if tweet[:2] != 'RT':
+				time_ms = data['timestamp_ms']
+				vs = analyzer.polarity_scores(tweet)
+				sentiment = vs['compound']
+				print(time_ms, tweet, sentiment)
+				df = pd.DataFrame({'unix': [time_ms],'tweet':[tweet], 'sentiment':[sentiment]})
+				df.to_sql('sentiment', con = database_connection, if_exists = 'append', index = False)
 
-        except KeyError as e:
-            print(str(e))
-        return(True)
+			else:
+				pass
 
-    def on_error(self, status):
-        print(status)
+		except KeyError as e:
+			print(str(e))
+		return(True)
+
+	def on_error(self, status):
+		print(status)
 
 auth = OAuthHandler(credentials.CONSUMER_KEY, credentials.CONSUMER_KEY_SECRET)
 auth.set_access_token(credentials.ACCESS_TOKEN, credentials.ACCESS_TOKEN_SECRET)
