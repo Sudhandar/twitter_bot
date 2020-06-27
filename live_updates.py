@@ -9,6 +9,8 @@ from collections import deque
 import sqlalchemy
 import pandas as pd
 
+POS_NEG_NEUT = 0.1
+
 app = dash.Dash(__name__)
 
 app.layout = html.Div(
@@ -20,8 +22,48 @@ app.layout = html.Div(
             interval= 1*1000,
             n_intervals = 0
         ),
+        html.Div(children = [html.Div(id = 'recent_tweets_table')]),
+        dcc.Interval(
+            id='recent_tweets_table_update',
+            interval= 10*1000,
+            n_intervals = 0
+        ),
+        
+
     ]
 )
+
+def quick_color(s):
+    if s >= POS_NEG_NEUT:
+        return "#2ca02c"
+    elif s <= -POS_NEG_NEUT:
+        return "#d62728"
+    else:
+        return '#7f7f7f'
+
+def generate_table(df, max_rows=10):
+    return html.Table(className="responsive-table",
+                      children=[
+                          html.Thead(
+                              html.Tr(
+                                  children=[
+                                      html.Th(col.title()) for col in df.columns.values],
+                              
+                                  )
+                              ),
+                          html.Tbody(
+                              [
+                                  
+                              html.Tr(
+                                  children=[
+                                      html.Td(data) for data in d
+                                      ], style={'color':'#FFFFFF',
+                                                'background-color':quick_color(d[2])}
+                                  )
+                               for d in df.values.tolist()])
+                          ]
+    )
+
 
 @app.callback(Output('live-graph', 'figure'),
 		[Input('graph-update', 'n_intervals'),
@@ -70,6 +112,37 @@ def update_graph_scatter(n, sentiment_term):
 			f.write(str(e))
 			f.write('\n')
 
+@app.callback(Output('recent_tweets_table', 'children'),
+		[Input('recent_tweets_table_update', 'n_intervals'),
+		Input(component_id = 'sentiment_term', component_property = 'value')])
+
+def update_table(n, sentiment_term):
+
+	try:
+
+		database_username = 'root'
+		database_password = ''
+		database_ip = 'localhost'
+		database_name = 'twitter_streaming'
+		database_connection = sqlalchemy.create_engine(
+		   'mysql+pymysql://{0}:{1}@{2}/{3}'.format(
+		       database_username, database_password,
+		       database_ip, database_name
+		   )
+		)
+
+		df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 10", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
+		df.sort_values('unix', inplace=True)
+		df['date'] = pd.to_datetime(df['unix'], unit = 'ms')
+		df.pop('unix')
+		df = df[['date','tweet','sentiment']]
+
+		return generate_table(df,10)
+
+	except Exception as e:
+		with open('errors.txt','a') as f:
+			f.write(str(e))
+			f.write('\n')
 
 if __name__ == '__main__':
     app.run_server(debug=True)
