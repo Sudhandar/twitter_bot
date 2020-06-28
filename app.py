@@ -32,7 +32,7 @@ app = dash.Dash(external_stylesheets=[dbc.themes.GRID])
 
 app.layout = html.Div(
 	[
-		dbc.Row(dbc.Col(html.Div([html.H2("Live Sentiment Tracker")]), width ={"size":5,"offset":3}), align = 'center'),
+		dbc.Row(dbc.Col(html.Div([html.H1("Live Sentiment Tracker")]), width ={"size":6,"offset":4}), align = 'center'),
 
 		dbc.Row(dbc.Col(html.Div([
 								html.Div(children = 'Enter search term'),
@@ -43,8 +43,8 @@ app.layout = html.Div(
 
 		dbc.Row(
 			[
-				dbc.Col(html.Div([html.H5("Live twitter graph")]), width = {"size":5}),
-				dbc.Col(html.Div([html.H5("Historical Graph")]), width = {"size":5, "offset":1}),
+				dbc.Col(html.Div([html.H4("Live sentiment graph")]), width = {"size":5}),
+				dbc.Col(html.Div([html.H4("Historical sentiment Graph")]), width = {"size":5, "offset":1}),
 			], justify = 'center'
 		),
 
@@ -54,7 +54,7 @@ app.layout = html.Div(
 							[ 
 								dcc.Graph(id = 'live-graph', animate = False),
 								dcc.Interval(id='graph-update', interval= 1*1000,n_intervals = 0)
-							]), width = {"size":5}),
+							]), width = {"size":6}),
 			])
 
 			]
