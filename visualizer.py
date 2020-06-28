@@ -11,23 +11,20 @@ import credentials
 from tweepy import OAuthHandler
 import dash_bootstrap_components as dbc
 
-
 POS_NEG_NEUT = 0.1
 sentiment_colors = {-1:"#EE6055",
                     -0.5:"#FDE74C",
                      0:"#FFE6AC",
                      0.5:"#D0F2DF",
                      1:"#9CEC5B",}
-
 app_colors = {
     'background': 'white',
     'text': 'black',
     'sentiment-plot':'#41EAD4',
-    'volume-bar':'#FBFC74',
+    'volume-bar':'yellow',
     'someothercolor':'#FF206E',
 }
 MAX_DF_LENGTH = 100
-
 def df_resample_sizes(df, maxlen=MAX_DF_LENGTH):
     df_len = len(df)
     resample_amt = 100
@@ -46,7 +43,6 @@ def df_resample_sizes(df, maxlen=MAX_DF_LENGTH):
     df = df.join(vol_df['volume'])
 
     return df
-
 def pos_neg_neutral(col):
     if col >= POS_NEG_NEUT:
         # positive
@@ -56,46 +52,80 @@ def pos_neg_neutral(col):
         return -1
     else:
         return 0
-
 app = dash.Dash(external_stylesheets=[dbc.themes.GRID])
 
 app.layout = html.Div(
     [
-        dbc.Row(dbc.Col(html.Div([html.H1("Twitter Sentiment Tracker")]),width ={"size":6, "offset":3})),
+        dbc.Row(dbc.Col(html.Div([html.H1("Twitter Sentiment Tracker")]),width ={"size":6, "offset":3},sm = 6)),
 
         dbc.Row(dbc.Col(html.Div([
                                 html.Div(children = 'Enter search term'),
                                 dcc.Input(id = 'sentiment_term', value = 'trump', type = 'text'),
-                                ]))),
-
-        dbc.Row(
-            [
-                dbc.Col(html.Div([html.H2("Live graph")])),
-                dbc.Col(html.Div([html.H2("Historical Graph")])),
-            ], justify = 'center'
-        ),
-
+                                ]),sm = 4)),
         dbc.Row(
         [
             dbc.Col(html.Div(
-                        [ 
+                        [   
+                            html.H2("Live graph"),
                             dcc.Graph(id = 'live_graph', animate = False),
                             dcc.Interval(id='live_graph_update', interval= 1*1000,n_intervals = 0)
-                        ]), width = {"size":6,}),
+                        ]), width = {"size":6,}, lg= 6 , sm = 12 ),
             dbc.Col(html.Div(
-                        [
+                        [   
+                            html.H2("Historical Graph"),
                             dcc.Graph(id = 'long_graph', animate = False),
                             dcc.Interval(id='long_graph_update', interval= 30*1000,n_intervals = 0)
-                        ]) ,width = {"size":6})
+                        ]) ,width = {"size":6}, lg = 6 , sm = 12)
         ]),
-
+        dbc.Row(
+        [
+            dbc.Col(html.Div(
+                        [   
+                            html.H2("Tweets Table"),
+                            html.Div(children = [html.Div(id = 'tweets_table')]),
+                            dcc.Interval(id='tweets_table_update', interval= 10*1000,n_intervals = 0)
+                        ]), width = {"size":6,},lg = 6, sm = 12),
+            dbc.Col(html.Div(
+                        [   
+                            html.H2("Sentiment Pie Chart"),
+                            dcc.Graph(id = 'pie_chart', animate = False),
+                            dcc.Interval(id='pie_chart_update', interval= 30*1000,n_intervals = 0)
+                        ]) ,width = {"size":6}, lg = 6, sm= 12)
+        ]),
     ]
 )
-
+def quick_color(s):
+    if s >= POS_NEG_NEUT:
+        return "#2ca02c"
+    elif s <= -POS_NEG_NEUT:
+        return "crimson"
+    else:
+        return '#7f7f7f'
+def generate_table(df, max_rows=10):
+    return html.Table(className="responsive-table",
+                      children=[
+                          html.Thead(
+                              html.Tr(
+                                  children=[
+                                      html.Th(col.title()) for col in df.columns.values],
+                              
+                                  )
+                              ),
+                          html.Tbody(
+                              [
+                                  
+                              html.Tr(
+                                  children=[
+                                      html.Td(data) for data in d
+                                      ], style={'color':'#FFFFFF',
+                                                'background-color':quick_color(d[2])}
+                                  )
+                               for d in df.values.tolist()])
+                          ]
+    )
 @app.callback(Output('live_graph', 'figure'),
         [Input('live_graph_update', 'n_intervals'),
         Input('sentiment_term', 'value')])
-
 def update_graph_scatter(n,sentiment_term):
     try:
         database_username = 'root'
@@ -134,7 +164,6 @@ def update_graph_scatter(n,sentiment_term):
                 name='Volume',
                 marker=dict(color=app_colors['volume-bar']),
                 )
-
         return {'data': [data,data2],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
                                                           yaxis=dict(range=[min(Y2),max(Y2*4)], title='Volume', side='right'),
                                                           yaxis2=dict(range=[min(Y),max(Y)], side='left', overlaying='y',title='sentiment'),
@@ -143,16 +172,13 @@ def update_graph_scatter(n,sentiment_term):
                                                           plot_bgcolor = app_colors['background'],
                                                           paper_bgcolor = app_colors['background'],
                                                           showlegend=False)}
-
     except Exception as e:
         with open('errors.txt','a') as f:
             f.write(str(e))
             f.write('\n')
-
 @app.callback(Output('long_graph', 'figure'),
         [Input('long_graph_update', 'n_intervals'),
         Input('sentiment_term', 'value')])
-
 def update_hist_graph_scatter(n,sentiment_term):
     try:
         database_username = 'root'
@@ -200,12 +226,40 @@ def update_hist_graph_scatter(n,sentiment_term):
                                                           plot_bgcolor = app_colors['background'],
                                                           paper_bgcolor = app_colors['background'],
                                                           showlegend=False)}
+    except Exception as e:
+        with open('errors.txt','a') as f:
+            f.write(str(e))
+            f.write('\n')
+@app.callback(Output('tweets_table', 'children'),
+        [Input('tweets_table_update', 'n_intervals'),
+        Input('sentiment_term', 'value')])
+
+def update_table(n, sentiment_term):
+    try:
+        database_username = 'root'
+        database_password = ''
+        database_ip = 'localhost'
+        database_name = 'twitter_streaming'
+        database_connection = sqlalchemy.create_engine(
+           'mysql+pymysql://{0}:{1}@{2}/{3}'.format(
+               database_username, database_password,
+               database_ip, database_name
+           )
+        )
+        df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 10", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
+        df.sort_values('unix', inplace=True)
+        df['date'] = pd.to_datetime(df['unix'], unit = 'ms')
+        df.pop('unix')
+        df = df[['date','tweet','sentiment']]
+        df['date'] = df['date'].apply(str)
+        df['time'] = df['date'].str.split(' ')
+        df['time'] = df['time'].apply(lambda x : x[1])
+        df = df[['time','tweet','sentiment']]
+        return generate_table(df)
 
     except Exception as e:
         with open('errors.txt','a') as f:
             f.write(str(e))
             f.write('\n')
-
-
 if __name__ == '__main__':
     app.run_server(debug = True)
