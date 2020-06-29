@@ -4,18 +4,18 @@ import dash_core_components as dcc
 import dash_html_components as html
 from tweepy import API
 import plotly
-import random
 import plotly.graph_objs as go 
-from collections import deque
 import sqlalchemy
 import pandas as pd
 import credentials
 from tweepy import OAuthHandler
+import dash_bootstrap_components as dbc
+
 
 
 POS_NEG_NEUT = 0.1
 
-app = dash.Dash(__name__)
+app = dash.Dash(external_stylesheets=[dbc.themes.CYBORG])
 
 app.layout = html.Div(
     [	html.H2('Live Twitter Sentiment'),
@@ -31,7 +31,7 @@ app.layout = html.Div(
 		html.Div(children = 'Recent Trends', style = {'textAlign' :'center'}),
 
 
-        html.Div(children = [html.Div(id = 'recent_trends', style = {"word-wrap":"break-word"})]),
+        html.Div(children = [html.Div(id = 'recent_trends')]),
         dcc.Interval(
         	id = 'trend_interval',
         	interval = 30*1000,
@@ -46,7 +46,7 @@ app.layout = html.Div(
             n_intervals = 0
         ),
         
-]
+], className = 'container', style = {'width':'50%', 'margin-left' : 10, 'margin-right' : 10}
 )
 
 def quick_color(s):
