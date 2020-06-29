@@ -58,7 +58,7 @@ app.layout = html.Div(
     [
         dbc.Row(dbc.Col(html.Div([html.H1("Twitter Sentiment Tracker")]),width ={"size":6, "offset":3},sm = 6)),
 
-        dbc.Row(dbc.Col(html.Div([
+        dbc.Row(dbc.Col(html.Div(children = [
                                 html.Div(children = 'Enter search term'),
                                 dcc.Input(id = 'sentiment_term', value = 'trump', type = 'text'),
                                 ]),sm = 4)),
@@ -89,7 +89,7 @@ app.layout = html.Div(
                         [   
                             html.H2("Sentiment Pie Chart"),
                             dcc.Graph(id = 'pie_chart', animate = False),
-                            dcc.Interval(id='pie_chart_update', interval= 30*1000,n_intervals = 0)
+                            dcc.Interval(id='pie_chart_update', interval= 10*1000,n_intervals = 0)
                         ]) ,width = {"size":6}, lg = 6, sm= 12)
         ]),
     ]
@@ -123,6 +123,7 @@ def generate_table(df, max_rows=10):
                                for d in df.values.tolist()])
                           ]
     )
+
 @app.callback(Output('live_graph', 'figure'),
         [Input('live_graph_update', 'n_intervals'),
         Input('sentiment_term', 'value')])
