@@ -81,3 +81,1340 @@ unsupported format character 't' (0x74) at index 43
 unsupported format character 't' (0x74) at index 43
 unsupported format character 't' (0x74) at index 43
 unsupported format character 't' (0x74) at index 43
+min() arg is an empty sequence
+min() arg is an empty sequence
+name 'POS_NEG_NEUT' is not defined
+name 'POS_NEG_NEUT' is not defined
+name 'POS_NEG_NEUT' is not defined
+name 'POS_NEG_NEUT' is not defined
+name 'POS_NEG_NEUT' is not defined
+name 'POS_NEG_NEUT' is not defined
+name 'POS_NEG_NEUT' is not defined
+name 'POS_NEG_NEUT' is not defined
+name 'POS_NEG_NEUT' is not defined
+name 'POS_NEG_NEUT' is not defined
+name 'POS_NEG_NEUT' is not defined
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+Only valid with DatetimeIndex, TimedeltaIndex or PeriodIndex, but got an instance of 'Index'
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+name 'df_resample_sizes' is not defined
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+
+    Invalid value of type 'builtins.str' received for the 'paper_bgcolor' property of layout
+        Received value: 'oxygen'
+
+    The 'paper_bgcolor' property is a color and may be specified as:
+      - A hex string (e.g. '#ff0000')
+      - An rgb/rgba string (e.g. 'rgb(255,0,0)')
+      - An hsl/hsla string (e.g. 'hsl(0,100%,50%)')
+      - An hsv/hsva string (e.g. 'hsv(0,100%,100%)')
+      - A named CSS color:
+            aliceblue, antiquewhite, aqua, aquamarine, azure,
+            beige, bisque, black, blanchedalmond, blue,
+            blueviolet, brown, burlywood, cadetblue,
+            chartreuse, chocolate, coral, cornflowerblue,
+            cornsilk, crimson, cyan, darkblue, darkcyan,
+            darkgoldenrod, darkgray, darkgrey, darkgreen,
+            darkkhaki, darkmagenta, darkolivegreen, darkorange,
+            darkorchid, darkred, darksalmon, darkseagreen,
+            darkslateblue, darkslategray, darkslategrey,
+            darkturquoise, darkviolet, deeppink, deepskyblue,
+            dimgray, dimgrey, dodgerblue, firebrick,
+            floralwhite, forestgreen, fuchsia, gainsboro,
+            ghostwhite, gold, goldenrod, gray, grey, green,
+            greenyellow, honeydew, hotpink, indianred, indigo,
+            ivory, khaki, lavender, lavenderblush, lawngreen,
+            lemonchiffon, lightblue, lightcoral, lightcyan,
+            lightgoldenrodyellow, lightgray, lightgrey,
+            lightgreen, lightpink, lightsalmon, lightseagreen,
+            lightskyblue, lightslategray, lightslategrey,
+            lightsteelblue, lightyellow, lime, limegreen,
+            linen, magenta, maroon, mediumaquamarine,
+            mediumblue, mediumorchid, mediumpurple,
+            mediumseagreen, mediumslateblue, mediumspringgreen,
+            mediumturquoise, mediumvioletred, midnightblue,
+            mintcream, mistyrose, moccasin, navajowhite, navy,
+            oldlace, olive, olivedrab, orange, orangered,
+            orchid, palegoldenrod, palegreen, paleturquoise,
+            palevioletred, papayawhip, peachpuff, peru, pink,
+            plum, powderblue, purple, red, rosybrown,
+            royalblue, rebeccapurple, saddlebrown, salmon,
+            sandybrown, seagreen, seashell, sienna, silver,
+            skyblue, slateblue, slategray, slategrey, snow,
+            springgreen, steelblue, tan, teal, thistle, tomato,
+            turquoise, violet, wheat, white, whitesmoke,
+            yellow, yellowgreen
+name 'database_connection' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+'>=' not supported between instances of 'str' and 'float'
+'>=' not supported between instances of 'str' and 'float'
+'>=' not supported between instances of 'str' and 'float'
+'>=' not supported between instances of 'str' and 'float'
+'>=' not supported between instances of 'str' and 'float'
+'>=' not supported between instances of 'str' and 'float'
+'>=' not supported between instances of 'str' and 'float'
+Length of values does not match length of index
+Length of values does not match length of index
+Length of values does not match length of index
+Length of values does not match length of index
+Length of values does not match length of index
+Length of values does not match length of index
+Length of values does not match length of index
+Length of values does not match length of index
+Length of values does not match length of index
+Length of values does not match length of index
+Length of values does not match length of index
+Length of values does not match length of index
+Length of values does not match length of index
+Length of values does not match length of index
+Length of values does not match length of index
+Length of values does not match length of index
+Length of values does not match length of index
+'>=' not supported between instances of 'str' and 'float'
+'>=' not supported between instances of 'str' and 'float'
+'>=' not supported between instances of 'str' and 'float'
+'>=' not supported between instances of 'str' and 'float'
+module 'cache' has no attribute 'set'
+module 'cache' has no attribute 'set'
+module 'cache' has no attribute 'set'
+module 'cache' has no attribute 'set'
+module 'cache' has no attribute 'cache'
+module 'cache' has no attribute 'cache'
+min() arg is an empty sequence
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+Can only use .str accessor with string values!
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+Can only use .str accessor with string values!
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
