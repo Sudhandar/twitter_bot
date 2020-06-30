@@ -309,6 +309,5 @@ def update_pie_chart(n,sentiment_term):
         with open('errors.txt','a') as f:
             f.write(str(e))
             f.write('\n')
-
 if __name__ == '__main__':
     app.run_server(debug = True)
