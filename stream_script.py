@@ -12,7 +12,7 @@ analyzer = SentimentIntensityAnalyzer()
 
 
 database_username = 'root'
-database_password = ''
+database_password = 'sudhandar'
 database_ip = 'localhost'
 database_name = 'twitter_streaming'
 database_connection = sqlalchemy.create_engine(

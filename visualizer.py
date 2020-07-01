@@ -130,7 +130,7 @@ def generate_table(df, max_rows=10):
 def update_graph_scatter(n,sentiment_term):
     try:
         database_username = 'root'
-        database_password = ''
+        database_password = 'sudhandar'
         database_ip = 'localhost'
         database_name = 'twitter_streaming'
         database_connection = sqlalchemy.create_engine(
@@ -183,7 +183,7 @@ def update_graph_scatter(n,sentiment_term):
 def update_hist_graph_scatter(n,sentiment_term):
     try:
         database_username = 'root'
-        database_password = ''
+        database_password = 'sudhandar'
         database_ip = 'localhost'
         database_name = 'twitter_streaming'
         database_connection = sqlalchemy.create_engine(
@@ -237,7 +237,7 @@ def update_hist_graph_scatter(n,sentiment_term):
 def update_table(n, sentiment_term):
     try:
         database_username = 'root'
-        database_password = ''
+        database_password = 'sudhandar'
         database_ip = 'localhost'
         database_name = 'twitter_streaming'
         database_connection = sqlalchemy.create_engine(
@@ -268,7 +268,7 @@ def update_table(n, sentiment_term):
 def update_pie_chart(n,sentiment_term):
     try:
         database_username = 'root'
-        database_password = ''
+        database_password = 'sudhandar'
         database_ip = 'localhost'
         database_name = 'twitter_streaming'
         database_connection = sqlalchemy.create_engine(
