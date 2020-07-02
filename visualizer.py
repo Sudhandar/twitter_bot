@@ -140,7 +140,10 @@ def generate_table(df, max_rows=10):
 def update_graph_scatter(n,sentiment_term):
     try:
         database_connection = db_connection()
-        df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
+        if sentiment_term:
+            df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
+        else:
+            df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment ORDER BY unix DESC LIMIT 1000"),columns = ['unix','tweet','sentiment']) 
         df.sort_values('unix', inplace=True)
         df['date'] = pd.to_datetime(df['unix'], unit='ms')
         df['date'] = df['date'].dt.tz_localize('UCT').dt.tz_convert('Asia/Kolkata')
@@ -187,8 +190,10 @@ def update_graph_scatter(n,sentiment_term):
 def update_hist_graph_scatter(n,sentiment_term):
     try:
         database_connection = db_connection()
-        df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 10000", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
-        df.sort_values('unix', inplace=True)
+        if sentiment_term:
+            df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 10000", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
+        else:
+            df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment ORDER BY unix DESC LIMIT 10000"),columns = ['unix','tweet','sentiment'])         df.sort_values('unix', inplace=True)
         df['date'] = pd.to_datetime(df['unix'], unit='ms')
         df['date'] = df['date'].dt.tz_localize('UCT').dt.tz_convert('Asia/Kolkata')
         df['date'] = df['date'].dt.strftime('%Y-%m-%d %H:%M:%S')
@@ -235,8 +240,10 @@ def update_hist_graph_scatter(n,sentiment_term):
 def update_table(n, sentiment_term):
     try:
         database_connection = db_connection()
-        df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 10", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
-        df.sort_values('unix', inplace=True)
+        if sentiment_term:
+            df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 10", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
+        else:
+            df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment ORDER BY unix DESC LIMIT 10"),columns = ['unix','tweet','sentiment'])         df.sort_values('unix', inplace=True)
         df['date'] = pd.to_datetime(df['unix'], unit = 'ms')
         df.pop('unix')
         df['date'] = df['date'].dt.tz_localize('UCT').dt.tz_convert('Asia/Kolkata')
@@ -255,8 +262,10 @@ def update_table(n, sentiment_term):
 def update_pie_chart(n,sentiment_term):
     try:
         database_connection = db_connection()
-        df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 10000", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
-        df.sort_values('unix', inplace=True)
+        if sentiment_term:
+            df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 10000", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
+        else:
+            df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment ORDER BY unix DESC LIMIT 10000"),columns = ['unix','tweet','sentiment'])         df.sort_values('unix', inplace=True)
         df['date'] = pd.to_datetime(df['unix'], unit='ms')
         df['date'] = df['date'].dt.tz_localize('UCT').dt.tz_convert('Asia/Kolkata')
         df['date'] = df['date'].dt.strftime('%Y-%m-%d %H:%M:%S')
