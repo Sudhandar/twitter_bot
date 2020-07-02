@@ -28,16 +28,12 @@ class listener(StreamListener):
 		try:
 			data = json.loads(data)
 			tweet = unidecode(data['text'])
-			if tweet[:2] != 'RT':
-				time_ms = data['timestamp_ms']
-				vs = analyzer.polarity_scores(tweet)
-				sentiment = vs['compound']
-				print(time_ms, tweet, sentiment)
-				df = pd.DataFrame({'unix': [time_ms],'tweet':[tweet], 'sentiment':[sentiment]})
-				df.to_sql('sentiment', con = database_connection, if_exists = 'append', index = False)
-
-			else:
-				pass
+			time_ms = data['timestamp_ms']
+			vs = analyzer.polarity_scores(tweet)
+			sentiment = vs['compound']
+			print(time_ms, tweet, sentiment)
+			df = pd.DataFrame({'unix': [time_ms],'tweet':[tweet], 'sentiment':[sentiment]})
+			df.to_sql('sentiment', con = database_connection, if_exists = 'append', index = False)
 
 		except KeyError as e:
 			print(str(e))
