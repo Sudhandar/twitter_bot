@@ -50,4 +50,4 @@ auth = OAuthHandler(credentials.CONSUMER_KEY, credentials.CONSUMER_KEY_SECRET)
 auth.set_access_token(credentials.ACCESS_TOKEN, credentials.ACCESS_TOKEN_SECRET)
 
 twitterStream = Stream(auth, listener())
-twitterStream.filter( languages =['en'], track=["trump","biden"])
+twitterStream.filter( languages =['en'], track=["a","e","i","o","u"])
