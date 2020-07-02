@@ -25,24 +25,33 @@ app_colors = {
     'someothercolor':'#FF206E',
 }
 MAX_DF_LENGTH = 100
+def db_connection():
+    database_username = 'root'
+    database_password = 'sudhandar'
+    database_ip = 'localhost'
+    database_name = 'twitter_streaming'
+    database_connection = sqlalchemy.create_engine(
+       'mysql+pymysql://{0}:{1}@{2}/{3}'.format(
+           database_username, database_password,
+           database_ip, database_name
+       )
+    )
+    return database_connection
+
 def df_resample_sizes(df, maxlen=MAX_DF_LENGTH):
     df_len = len(df)
     resample_amt = 100
     vol_df = df.copy()
     vol_df['volume'] = 1
-
     ms_span = (df.index[-1] - df.index[0]).seconds * 1000
     rs = int(ms_span / maxlen)
-
     df = df.resample('{}ms'.format(int(rs))).mean()
     df.dropna(inplace=True)
-
     vol_df = vol_df.resample('{}ms'.format(int(rs))).sum()
     vol_df.dropna(inplace=True)
-
     df = df.join(vol_df['volume'])
-
     return df
+
 def pos_neg_neutral(col):
     if col >= POS_NEG_NEUT:
         # positive
@@ -52,6 +61,7 @@ def pos_neg_neutral(col):
         return -1
     else:
         return 0
+
 app = dash.Dash(external_stylesheets=[dbc.themes.GRID])
 
 app.layout = html.Div(
@@ -129,19 +139,13 @@ def generate_table(df, max_rows=10):
         Input('sentiment_term', 'value')])
 def update_graph_scatter(n,sentiment_term):
     try:
-        database_username = 'root'
-        database_password = 'sudhandar'
-        database_ip = 'localhost'
-        database_name = 'twitter_streaming'
-        database_connection = sqlalchemy.create_engine(
-           'mysql+pymysql://{0}:{1}@{2}/{3}'.format(
-               database_username, database_password,
-               database_ip, database_name
-           )
-        )
+        database_connection = db_connection()
         df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
         df.sort_values('unix', inplace=True)
         df['date'] = pd.to_datetime(df['unix'], unit='ms')
+        df['date'] = df['date'].dt.tz_localize('UCT').dt.tz_convert('Asia/Kolkata')
+        df['date'] = df['date'].dt.strftime('%Y-%m-%d %H:%M:%S')
+        df['date'] = df['date'].astype('datetime64[ns]')
         df.set_index('date', inplace=True)
         init_length = len(df)
         df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
@@ -182,19 +186,13 @@ def update_graph_scatter(n,sentiment_term):
         Input('sentiment_term', 'value')])
 def update_hist_graph_scatter(n,sentiment_term):
     try:
-        database_username = 'root'
-        database_password = 'sudhandar'
-        database_ip = 'localhost'
-        database_name = 'twitter_streaming'
-        database_connection = sqlalchemy.create_engine(
-           'mysql+pymysql://{0}:{1}@{2}/{3}'.format(
-               database_username, database_password,
-               database_ip, database_name
-           )
-        )
+        database_connection = db_connection()
         df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 10000", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
         df.sort_values('unix', inplace=True)
         df['date'] = pd.to_datetime(df['unix'], unit='ms')
+        df['date'] = df['date'].dt.tz_localize('UCT').dt.tz_convert('Asia/Kolkata')
+        df['date'] = df['date'].dt.strftime('%Y-%m-%d %H:%M:%S')
+        df['date'] = df['date'].astype('datetime64[ns]')
         df.set_index('date', inplace=True)
         init_length = len(df)
         df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
@@ -236,24 +234,13 @@ def update_hist_graph_scatter(n,sentiment_term):
 
 def update_table(n, sentiment_term):
     try:
-        database_username = 'root'
-        database_password = 'sudhandar'
-        database_ip = 'localhost'
-        database_name = 'twitter_streaming'
-        database_connection = sqlalchemy.create_engine(
-           'mysql+pymysql://{0}:{1}@{2}/{3}'.format(
-               database_username, database_password,
-               database_ip, database_name
-           )
-        )
+        database_connection = db_connection()
         df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 10", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
         df.sort_values('unix', inplace=True)
         df['date'] = pd.to_datetime(df['unix'], unit = 'ms')
         df.pop('unix')
-        df = df[['date','tweet','sentiment']]
-        df['date'] = df['date'].apply(str)
-        df['time'] = df['date'].str.split(' ')
-        df['time'] = df['time'].apply(lambda x : x[1])
+        df['date'] = df['date'].dt.tz_localize('UCT').dt.tz_convert('Asia/Kolkata')
+        df['time'] = df['date'].dt.strftime('%H:%M:%S')
         df = df[['time','tweet','sentiment']]
         return generate_table(df)
 
@@ -267,19 +254,13 @@ def update_table(n, sentiment_term):
         Input('sentiment_term', 'value')])
 def update_pie_chart(n,sentiment_term):
     try:
-        database_username = 'root'
-        database_password = 'sudhandar'
-        database_ip = 'localhost'
-        database_name = 'twitter_streaming'
-        database_connection = sqlalchemy.create_engine(
-           'mysql+pymysql://{0}:{1}@{2}/{3}'.format(
-               database_username, database_password,
-               database_ip, database_name
-           )
-        )
+        database_connection = db_connection()
         df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 10000", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
         df.sort_values('unix', inplace=True)
         df['date'] = pd.to_datetime(df['unix'], unit='ms')
+        df['date'] = df['date'].dt.tz_localize('UCT').dt.tz_convert('Asia/Kolkata')
+        df['date'] = df['date'].dt.strftime('%Y-%m-%d %H:%M:%S')
+        df['date'] = df['date'].astype('datetime64[ns]')
         df.set_index('date', inplace=True)
         init_length = len(df)
         df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
