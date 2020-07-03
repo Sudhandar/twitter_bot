@@ -303,4 +303,4 @@ def update_pie_chart(n,sentiment_term):
             f.write(str(e))
             f.write('\n')
 if __name__ == '__main__':
-    app.run_server(host = '35.208.225.7', port = 80)
+    app.run_server(host = '0.0.0.0', port = 8050)
