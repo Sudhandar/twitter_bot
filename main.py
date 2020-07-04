@@ -63,7 +63,7 @@ def pos_neg_neutral(col):
         return 0
 
 app = dash.Dash(external_stylesheets=[dbc.themes.GRID])
-dash_app = app.server
+server = app.server
 app.layout = html.Div(
     [
         dbc.Row(dbc.Col(html.Div([html.H1("Twitter Sentiment Tracker")]),width ={"size":6, "offset":3},sm = 6)),
