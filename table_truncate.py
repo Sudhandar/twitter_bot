@@ -2,7 +2,7 @@ import sqlalchemy
 
 def db_connection():
     database_username = 'root'
-    database_password = 'sudhandar'
+    database_password = ''
     database_ip = 'localhost'
     database_name = 'twitter_streaming'
     database_connection = sqlalchemy.create_engine(
@@ -23,4 +23,4 @@ def truncate_before_dump(table):
        con.execute("DELETE FROM " + table + ";")
 
 if __name__ == '__main__':
-  truncate_before_dump('sentiment')
+  truncate_before_dump('sentiment_tweets')
