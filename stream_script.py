@@ -10,7 +10,6 @@ from unidecode import unidecode
 
 analyzer = SentimentIntensityAnalyzer()
 
-
 database_username = 'root'
 database_password = 'sudhandar'
 database_ip = 'localhost'
