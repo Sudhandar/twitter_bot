@@ -27,7 +27,7 @@ app_colors = {
 MAX_DF_LENGTH = 100
 def db_connection():
     database_username = 'root'
-    database_password = 'sudhandar'
+    database_password = ''
     database_ip = 'localhost'
     database_name = 'twitter_streaming'
     database_connection = sqlalchemy.create_engine(
@@ -172,14 +172,25 @@ def update_graph_scatter(n,sentiment_term):
                 name='Volume',
                 marker=dict(color=app_colors['volume-bar']),
                 )
-        return {'data': [data,data2],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
-                                                          yaxis=dict(range=[min(Y2),max(Y2*4)], title='Volume', side='right'),
-                                                          yaxis2=dict(range=[min(Y),max(Y)], side='left', overlaying='y',title='sentiment'),
-                                                          title='Live sentiment for term : "{}"'.format(sentiment_term),
-                                                          font={'color':app_colors['text']},
-                                                          plot_bgcolor = app_colors['background'],
-                                                          paper_bgcolor = app_colors['background'],
-                                                          showlegend=False)}
+        if sentiment_term:
+            return {'data': [data,data2],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
+                                                              yaxis=dict(range=[min(Y2),max(Y2*4)], title='Volume', side='right'),
+                                                              yaxis2=dict(range=[min(Y),max(Y)], side='left', overlaying='y',title='sentiment'),
+                                                              title='Live sentiment for term : "{}"'.format(sentiment_term),
+                                                              font={'color':app_colors['text']},
+                                                              plot_bgcolor = app_colors['background'],
+                                                              paper_bgcolor = app_colors['background'],
+                                                              showlegend=False)}
+        else:
+            return {'data': [data,data2],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
+                                                              yaxis=dict(range=[min(Y2),max(Y2*4)], title='Volume', side='right'),
+                                                              yaxis2=dict(range=[min(Y),max(Y)], side='left', overlaying='y',title='sentiment'),
+                                                              title='Live sentiment:',
+                                                              font={'color':app_colors['text']},
+                                                              plot_bgcolor = app_colors['background'],
+                                                              paper_bgcolor = app_colors['background'],
+                                                              showlegend=False)}
+
     except Exception as e:
         with open('errors.txt','a') as f:
             f.write(str(e))
@@ -222,18 +233,29 @@ def update_hist_graph_scatter(n,sentiment_term):
                 name='Volume',
                 marker=dict(color=app_colors['volume-bar']),
                 )
-        return {'data': [data,data2],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
-                                                          yaxis=dict(range=[min(Y2),max(Y2*4)], title='Volume', side='right'),
-                                                          yaxis2=dict(range=[min(Y),max(Y)], side='left', overlaying='y',title='sentiment'),
-                                                          title='Longer-term sentiment for: "{}"'.format(sentiment_term),
-                                                          font={'color':app_colors['text']},
-                                                          plot_bgcolor = app_colors['background'],
-                                                          paper_bgcolor = app_colors['background'],
-                                                          showlegend=False)}
+        if sentiment_term:
+            return {'data': [data,data2],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
+                                                              yaxis=dict(range=[min(Y2),max(Y2*4)], title='Volume', side='right'),
+                                                              yaxis2=dict(range=[min(Y),max(Y)], side='left', overlaying='y',title='sentiment'),
+                                                              title='Longer-term sentiment for: "{}"'.format(sentiment_term),
+                                                              font={'color':app_colors['text']},
+                                                              plot_bgcolor = app_colors['background'],
+                                                              paper_bgcolor = app_colors['background'],
+                                                              showlegend=False)}
+        else:
+            return {'data': [data,data2],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
+                                                              yaxis=dict(range=[min(Y2),max(Y2*4)], title='Volume', side='right'),
+                                                              yaxis2=dict(range=[min(Y),max(Y)], side='left', overlaying='y',title='sentiment'),
+                                                              title='Longer-term sentiment:',
+                                                              font={'color':app_colors['text']},
+                                                              plot_bgcolor = app_colors['background'],
+                                                              paper_bgcolor = app_colors['background'],
+                                                              showlegend=False)}
     except Exception as e:
         with open('errors.txt','a') as f:
             f.write(str(e))
             f.write('\n')
+
 @app.callback(Output('tweets_table', 'children'),
         [Input('tweets_table_update', 'n_intervals'),
         Input('sentiment_term', 'value')])
@@ -292,15 +314,24 @@ def update_pie_chart(n,sentiment_term):
                        textfont=dict(size=20, color=app_colors['text']),
                        marker=dict(colors=colors, 
                                    line=dict(color=app_colors['background'], width=2)))
-        return {"data":[trace],'layout' : go.Layout(
-                                                      title='Positive vs Negative sentiment for "{}" (longer-term)'.format(sentiment_term),
-                                                      font={'color':app_colors['text']},
-                                                      plot_bgcolor = app_colors['background'],
-                                                      paper_bgcolor = app_colors['background'],
-                                                      showlegend=True)}
+        if sentiment_term:
+            return {"data":[trace],'layout' : go.Layout(
+                                                          title='Positive vs Negative sentiment for "{}" (longer-term)'.format(sentiment_term),
+                                                          font={'color':app_colors['text']},
+                                                          plot_bgcolor = app_colors['background'],
+                                                          paper_bgcolor = app_colors['background'],
+                                                          showlegend=True)}
+        else:
+            return {"data":[trace],'layout' : go.Layout(
+                                                          title='Positive vs Negative sentiment',
+                                                          font={'color':app_colors['text']},
+                                                          plot_bgcolor = app_colors['background'],
+                                                          paper_bgcolor = app_colors['background'],
+                                                          showlegend=True)}
+
     except Exception as e:
         with open('errors.txt','a') as f:
             f.write(str(e))
             f.write('\n')
 if __name__ == '__main__':
-    app.run_server(host = '0.0.0.0',port= 8080,debug =True)
+    app.run_server(host = '0.0.0.0',port= 8050,debug =True)
