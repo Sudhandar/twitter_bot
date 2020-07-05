@@ -427,7 +427,7 @@ def update_pie_chart(n,sentiment_term):
                                                               paper_bgcolor = app_colors['background'],
                                                               showlegend=True)}
             except:
-                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 1000"),columns = ['date','tweet','sentiment']) 
+                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 10000"),columns = ['date','tweet','sentiment']) 
                 df.sort_values('date', inplace=True)
                 df.set_index('date', inplace=True)
                 init_length = len(df)
