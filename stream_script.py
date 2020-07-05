@@ -31,8 +31,13 @@ class listener(StreamListener):
 			vs = analyzer.polarity_scores(tweet)
 			sentiment = vs['compound']
 			print(time_ms, tweet, sentiment)
-			df = pd.DataFrame({'unix': [time_ms],'tweet':[tweet], 'sentiment':[sentiment]})
-			df.to_sql('sentiment', con = database_connection, if_exists = 'append', index = False)
+			df = pd.DataFrame({'date': [time_ms],'tweet':[tweet], 'sentiment':[sentiment]})
+			df['date'] = pd.to_datetime(df['date'], unit='ms')
+			df['date'] = df['date'].dt.tz_localize('UCT').dt.tz_convert('Asia/Kolkata')
+			df['date'] = df['date'].dt.strftime('%Y-%m-%d %H:%M:%S')
+			df['date'] = df['date'].astype('datetime64[ns]')
+
+			df.to_sql('sentiment_tweets', con = database_connection, if_exists = 'append', index = False)
 
 		except KeyError as e:
 			print(str(e))
