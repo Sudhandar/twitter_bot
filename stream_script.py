@@ -11,7 +11,7 @@ from unidecode import unidecode
 analyzer = SentimentIntensityAnalyzer()
 
 database_username = 'root'
-database_password = ''
+database_password = 'sudhandar'
 database_ip = 'localhost'
 database_name = 'twitter_streaming'
 database_connection = sqlalchemy.create_engine(
@@ -41,7 +41,7 @@ class listener(StreamListener):
 
 		except KeyError as e:
 			# print(str(e))
-		return(True)
+			return(True)
 
 	def on_error(self, status):
 		# print(status)
