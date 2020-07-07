@@ -11,7 +11,7 @@ from unidecode import unidecode
 analyzer = SentimentIntensityAnalyzer()
 
 database_username = 'root'
-database_password = 'sudhandar'
+database_password = ''
 database_ip = 'localhost'
 database_name = 'twitter_streaming'
 database_connection = sqlalchemy.create_engine(
@@ -30,7 +30,7 @@ class listener(StreamListener):
 			time_ms = data['timestamp_ms']
 			vs = analyzer.polarity_scores(tweet)
 			sentiment = vs['compound']
-			print(time_ms, tweet, sentiment)
+			# print(time_ms, tweet, sentiment)
 			df = pd.DataFrame({'date': [time_ms],'tweet':[tweet], 'sentiment':[sentiment]})
 			df['date'] = pd.to_datetime(df['date'], unit='ms')
 			df['date'] = df['date'].dt.tz_localize('UCT').dt.tz_convert('Asia/Kolkata')
@@ -40,11 +40,11 @@ class listener(StreamListener):
 			df.to_sql('sentiment_tweets', con = database_connection, if_exists = 'append', index = False)
 
 		except KeyError as e:
-			print(str(e))
+			# print(str(e))
 		return(True)
 
 	def on_error(self, status):
-		print(status)
+		# print(status)
 
 auth = OAuthHandler(credentials.CONSUMER_KEY, credentials.CONSUMER_KEY_SECRET)
 auth.set_access_token(credentials.ACCESS_TOKEN, credentials.ACCESS_TOKEN_SECRET)
