@@ -247,6 +247,7 @@ def update_graph_scatter(n,sentiment_term):
 
     except Exception as e:
         with open('errors.txt','a') as f:
+            print(str(e))
             f.write(str(e))
             f.write('\n')
 
@@ -359,6 +360,7 @@ def update_hist_graph_scatter(n,sentiment_term):
                                                               showlegend=False)}
     except Exception as e:
         with open('errors.txt','a') as f:
+            print(str(e))            
             f.write(str(e))
             f.write('\n')
 @app.callback(Output('tweets_table', 'children'),
@@ -388,6 +390,7 @@ def update_table(n, sentiment_term):
             return generate_table(df)
     except Exception as e:
         with open('errors.txt','a') as f:
+            print(str(e))
             f.write(str(e))
             f.write('\n')
 
@@ -484,8 +487,9 @@ def update_pie_chart(n,sentiment_term):
                                                           showlegend=True)}
     except Exception as e:
         with open('errors.txt','a') as f:
+            print(str(e))
             f.write(str(e))
             f.write('\n')
 if __name__ == '__main__':
-    app.run_server(host = '0.0.0.0',port= 8050,debug =True)
-    # app.run_server(debug=True)
+    # app.run_server(host = '0.0.0.0',port= 8050,debug =True)
+    app.run_server(debug=True)
