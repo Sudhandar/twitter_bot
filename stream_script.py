@@ -11,7 +11,7 @@ from unidecode import unidecode
 analyzer = SentimentIntensityAnalyzer()
 
 database_username = 'root'
-database_password = 'sudhandar'
+database_password = ''
 database_ip = 'localhost'
 database_name = 'twitter_streaming'
 database_connection = sqlalchemy.create_engine(
@@ -41,10 +41,11 @@ class listener(StreamListener):
 
 		except KeyError as e:
 			# print(str(e))
-			return(True)
+			pass
 
 	def on_error(self, status):
 		# print(status)
+		pass
 
 auth = OAuthHandler(credentials.CONSUMER_KEY, credentials.CONSUMER_KEY_SECRET)
 auth.set_access_token(credentials.ACCESS_TOKEN, credentials.ACCESS_TOKEN_SECRET)
