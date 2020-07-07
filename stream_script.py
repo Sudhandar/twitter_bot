@@ -42,7 +42,8 @@ class listener(StreamListener):
 		except KeyError as e:
 			# print(str(e))
 			pass
-
+	def on_exception():
+		return
 	def on_error(self, status):
 		# print(status)
 		pass
@@ -51,4 +52,4 @@ auth = OAuthHandler(credentials.CONSUMER_KEY, credentials.CONSUMER_KEY_SECRET)
 auth.set_access_token(credentials.ACCESS_TOKEN, credentials.ACCESS_TOKEN_SECRET)
 
 twitterStream = Stream(auth, listener())
-twitterStream.filter( languages =['en'], track=["a","e","i","o","u"])
+twitterStream.filter( languages =['en'], track=["a","e","i","o","u"], stall_warnings = True)
