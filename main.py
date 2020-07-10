@@ -70,7 +70,7 @@ app.layout = html.Div(
 
         dbc.Row(dbc.Col(html.Div(children = [
                                 html.Div(children = 'Enter search term'),
-                                dcc.Input(id = 'sentiment_term', value = 'trump', type = 'text'),
+                                dcc.Input(id = 'sentiment_term', value = 'trump', type = 'text', debounce = True),
                                 ]),sm = 4)),
         dbc.Row(
         [
@@ -143,107 +143,43 @@ def update_graph_scatter(n,sentiment_term):
         if sentiment_term:
             try:
                 df = pd.DataFrame(database_connection.execute("SELECT * FROM sentiment_tweets WHERE Match(tweet) Against(%s) ORDER BY date DESC LIMIT 1000;",(sentiment_term)),columns = ['date','tweet','sentiment'])
-                df.sort_values('date', inplace=True)
-                df.set_index('date', inplace=True)
-                init_length = len(df)
-                df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
-                df = df_resample_sizes(df)
-                X = df.index
-                Y = df.sentiment_smoothed.values
-                Y2 = df.volume.values
-                data = plotly.graph_objs.Scatter(
-                        x=X,
-                        y=Y,
-                        name='Sentiment',
-                        mode= 'lines',
-                        yaxis='y2',
-                        line = dict(color = (app_colors['sentiment-plot']),
-                                    width = 4,)
-                        )
-
-                data2 = plotly.graph_objs.Bar(
-                        x=X,
-                        y=Y2,
-                        name='Volume',
-                        marker=dict(color=app_colors['volume-bar']),
-                        )
-                return {'data': [data,data2],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
-                                                  yaxis=dict(range=[min(Y2),max(Y2*4)], title='Volume', side='right'),
-                                                  yaxis2=dict(range=[min(Y),max(Y)], side='left', overlaying='y',title='sentiment'),
-                                                  title='Live sentiment for term : "{}"'.format(sentiment_term),
-                                                  font={'color':app_colors['text']},
-                                                  plot_bgcolor = app_colors['background'],
-                                                  paper_bgcolor = app_colors['background'],
-                                                  showlegend=False)}
             except:
-                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 1000"),columns = ['date','tweet','sentiment'])
-                df.sort_values('date', inplace=True)
-                df.set_index('date', inplace=True)
-                init_length = len(df)
-                df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
-                df = df_resample_sizes(df)
-                X = df.index
-                Y = df.sentiment_smoothed.values
-                Y2 = df.volume.values
-                data = plotly.graph_objs.Scatter(
-                        x=X,
-                        y=Y,
-                        name='Sentiment',
-                        mode= 'lines',
-                        yaxis='y2',
-                        line = dict(color = (app_colors['sentiment-plot']),
-                                    width = 4,)
-                        )
-
-                data2 = plotly.graph_objs.Bar(
-                        x=X,
-                        y=Y2,
-                        name='Volume',
-                        marker=dict(color=app_colors['volume-bar']),
-                        )
-                return {'data': [data,data2],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
-                                                                  yaxis=dict(range=[min(Y2),max(Y2*4)], title='Volume', side='right'),
-                                                                  yaxis2=dict(range=[min(Y),max(Y)], side='left', overlaying='y',title='sentiment'),
-                                                                  title='Live sentiment:',
-                                                                  font={'color':app_colors['text']},
-                                                                  plot_bgcolor = app_colors['background'],
-                                                                  paper_bgcolor = app_colors['background'],
-                                                                  showlegend=False)}
+                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 1000"),columns = ['date','tweet','sentiment']) 
+                sentiment_term = ''
         else:
             df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 1000"),columns = ['date','tweet','sentiment']) 
-            df.sort_values('date', inplace=True)
-            df.set_index('date', inplace=True)
-            init_length = len(df)
-            df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
-            df = df_resample_sizes(df)
-            X = df.index
-            Y = df.sentiment_smoothed.values
-            Y2 = df.volume.values
-            data = plotly.graph_objs.Scatter(
-                    x=X,
-                    y=Y,
-                    name='Sentiment',
-                    mode= 'lines',
-                    yaxis='y2',
-                    line = dict(color = (app_colors['sentiment-plot']),
-                                width = 4,)
-                    )
+        df.sort_values('date', inplace=True)
+        df.set_index('date', inplace=True)
+        init_length = len(df)
+        df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
+        df = df_resample_sizes(df)
+        X = df.index
+        Y = df.sentiment_smoothed.values
+        Y2 = df.volume.values
+        data = plotly.graph_objs.Scatter(
+                x=X,
+                y=Y,
+                name='Sentiment',
+                mode= 'lines',
+                yaxis='y2',
+                line = dict(color = (app_colors['sentiment-plot']),
+                            width = 4,)
+                )
 
-            data2 = plotly.graph_objs.Bar(
-                    x=X,
-                    y=Y2,
-                    name='Volume',
-                    marker=dict(color=app_colors['volume-bar']),
-                    )
-            return {'data': [data,data2],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
-                                                              yaxis=dict(range=[min(Y2),max(Y2*4)], title='Volume', side='right'),
-                                                              yaxis2=dict(range=[min(Y),max(Y)], side='left', overlaying='y',title='sentiment'),
-                                                              title='Live sentiment:',
-                                                              font={'color':app_colors['text']},
-                                                              plot_bgcolor = app_colors['background'],
-                                                              paper_bgcolor = app_colors['background'],
-                                                              showlegend=False)}
-
+        data2 = plotly.graph_objs.Bar(
+                x=X,
+                y=Y2,
+                name='Volume',
+                marker=dict(color=app_colors['volume-bar']),
+                )
+        return {'data': [data,data2],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
+                                          yaxis=dict(range=[min(Y2),max(Y2*4)], title='Volume', side='right'),
+                                          yaxis2=dict(range=[min(Y),max(Y)], side='left', overlaying='y',title='sentiment'),
+                                          title='Live sentiment for term : "{}"'.format(sentiment_term),
+                                          font={'color':app_colors['text']},
+                                          plot_bgcolor = app_colors['background'],
+                                          paper_bgcolor = app_colors['background'],
+                                          showlegend=False)}
     except Exception as e:
         with open('errors.txt','a') as f:
             print(str(e))
@@ -259,103 +195,42 @@ def update_hist_graph_scatter(n,sentiment_term):
         if sentiment_term:
             try:
                 df = pd.DataFrame(database_connection.execute("SELECT * FROM sentiment_tweets WHERE Match(tweet) Against(%s) ORDER BY date DESC LIMIT 10000;",(sentiment_term)),columns = ['date','tweet','sentiment'])
-                df.set_index('date', inplace=True)
-                init_length = len(df)
-                df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
-                df.dropna(inplace=True)
-                df = df_resample_sizes(df,maxlen=1000)
-                X = df.index
-                Y = df.sentiment_smoothed.values
-                Y2 = df.volume.values
-                data = plotly.graph_objs.Scatter(
-                        x=X,
-                        y=Y,
-                        name='Sentiment',
-                        mode= 'lines',
-                        yaxis='y2',
-                        line = dict(color = (app_colors['sentiment-plot']),
-                                    width = 4,)
-                        )
-                data2 = plotly.graph_objs.Bar(
-                        x=X,
-                        y=Y2,
-                        name='Volume',
-                        marker=dict(color=app_colors['volume-bar']),
-                        )
-                return {'data': [data,data2],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
-                                                                  yaxis=dict(range=[min(Y2),max(Y2*4)], title='Volume', side='right'),
-                                                                  yaxis2=dict(range=[min(Y),max(Y)], side='left', overlaying='y',title='sentiment'),
-                                                                  title='Longer-term sentiment for: "{}"'.format(sentiment_term),
-                                                                  font={'color':app_colors['text']},
-                                                                  plot_bgcolor = app_colors['background'],
-                                                                  paper_bgcolor = app_colors['background'],
-                                                                  showlegend=False)}
             except:
-                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 10000"),columns = ['date','tweet','sentiment']) 
-                df.set_index('date', inplace=True)
-                init_length = len(df)
-                df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
-                df.dropna(inplace=True)
-                df = df_resample_sizes(df,maxlen=1000)
-                X = df.index
-                Y = df.sentiment_smoothed.values
-                Y2 = df.volume.values
-                data = plotly.graph_objs.Scatter(
-                        x=X,
-                        y=Y,
-                        name='Sentiment',
-                        mode= 'lines',
-                        yaxis='y2',
-                        line = dict(color = (app_colors['sentiment-plot']),
-                                    width = 4,)
-                        )
-                data2 = plotly.graph_objs.Bar(
-                        x=X,
-                        y=Y2,
-                        name='Volume',
-                        marker=dict(color=app_colors['volume-bar']),
-                        )
-                return {'data': [data,data2],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
-                                                                  yaxis=dict(range=[min(Y2),max(Y2*4)], title='Volume', side='right'),
-                                                                  yaxis2=dict(range=[min(Y),max(Y)], side='left', overlaying='y',title='sentiment'),
-                                                                  title='Longer-term sentiment:',
-                                                                  font={'color':app_colors['text']},
-                                                                  plot_bgcolor = app_colors['background'],
-                                                                  paper_bgcolor = app_colors['background'],
-                                                                  showlegend=False)}
+                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 10000"),columns = ['date','tweet','sentiment'])
+                sentiment_term = ''
         else:
             df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 10000"),columns = ['date','tweet','sentiment']) 
-            df.set_index('date', inplace=True)
-            init_length = len(df)
-            df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
-            df.dropna(inplace=True)
-            df = df_resample_sizes(df,maxlen=1000)
-            X = df.index
-            Y = df.sentiment_smoothed.values
-            Y2 = df.volume.values
-            data = plotly.graph_objs.Scatter(
-                    x=X,
-                    y=Y,
-                    name='Sentiment',
-                    mode= 'lines',
-                    yaxis='y2',
-                    line = dict(color = (app_colors['sentiment-plot']),
-                                width = 4,)
-                    )
-            data2 = plotly.graph_objs.Bar(
-                    x=X,
-                    y=Y2,
-                    name='Volume',
-                    marker=dict(color=app_colors['volume-bar']),
-                    )
-            return {'data': [data,data2],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
-                                                              yaxis=dict(range=[min(Y2),max(Y2*4)], title='Volume', side='right'),
-                                                              yaxis2=dict(range=[min(Y),max(Y)], side='left', overlaying='y',title='sentiment'),
-                                                              title='Longer-term sentiment:',
-                                                              font={'color':app_colors['text']},
-                                                              plot_bgcolor = app_colors['background'],
-                                                              paper_bgcolor = app_colors['background'],
-                                                              showlegend=False)}
+        df.set_index('date', inplace=True)
+        init_length = len(df)
+        df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
+        df.dropna(inplace=True)
+        df = df_resample_sizes(df,maxlen=1000)
+        X = df.index
+        Y = df.sentiment_smoothed.values
+        Y2 = df.volume.values
+        data = plotly.graph_objs.Scatter(
+                x=X,
+                y=Y,
+                name='Sentiment',
+                mode= 'lines',
+                yaxis='y2',
+                line = dict(color = (app_colors['sentiment-plot']),
+                            width = 4,)
+                )
+        data2 = plotly.graph_objs.Bar(
+                x=X,
+                y=Y2,
+                name='Volume',
+                marker=dict(color=app_colors['volume-bar']),
+                )
+        return {'data': [data,data2],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
+                                                          yaxis=dict(range=[min(Y2),max(Y2*4)], title='Volume', side='right'),
+                                                          yaxis2=dict(range=[min(Y),max(Y)], side='left', overlaying='y',title='sentiment'),
+                                                          title='Longer-term sentiment for: "{}"'.format(sentiment_term),
+                                                          font={'color':app_colors['text']},
+                                                          plot_bgcolor = app_colors['background'],
+                                                          paper_bgcolor = app_colors['background'],
+                                                          showlegend=False)}
     except Exception as e:
         with open('errors.txt','a') as f:
             print(str(e))            
@@ -370,22 +245,15 @@ def update_table(n, sentiment_term):
         if sentiment_term:
             try:
                 df = pd.DataFrame(database_connection.execute("SELECT * FROM sentiment_tweets WHERE Match(tweet) Against(%s) ORDER BY date DESC LIMIT 10;",(sentiment_term)),columns = ['date','tweet','sentiment'])
-                df.sort_values('date', inplace=True)
-                df['time'] = df['date'].dt.strftime('%H:%M:%S')
-                df = df[['time','tweet','sentiment']]
-                return generate_table(df)
             except:
-                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 10"),columns = ['date','tweet','sentiment']) 
-                df.sort_values('date', inplace=True)
-                df['time'] = df['date'].dt.strftime('%H:%M:%S')
-                df = df[['time','tweet','sentiment']]
-                return generate_table(df)
+                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 10"),columns = ['date','tweet','sentiment'])        
+                sentiment_term = ''
         else:
             df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 10"),columns = ['date','tweet','sentiment'])        
-            df.sort_values('date', inplace=True)
-            df['time'] = df['date'].dt.strftime('%H:%M:%S')
-            df = df[['time','tweet','sentiment']]
-            return generate_table(df)
+        df.sort_values('date', inplace=True)
+        df['time'] = df['date'].dt.strftime('%H:%M:%S')
+        df = df[['time','tweet','sentiment']]
+        return generate_table(df)
     except Exception as e:
         with open('errors.txt','a') as f:
             print(str(e))
@@ -401,93 +269,42 @@ def update_pie_chart(n,sentiment_term):
         if sentiment_term:
             try:
                 df = pd.DataFrame(database_connection.execute("SELECT * FROM sentiment_tweets WHERE Match(tweet) Against(%s) ORDER BY date DESC LIMIT 10000;",(sentiment_term)),columns = ['date','tweet','sentiment'])
-                df.sort_values('date', inplace=True)
-                df.set_index('date', inplace=True)
-                init_length = len(df)
-                df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
-                df.dropna(inplace=True)
-                df = df_resample_sizes(df,maxlen=1000)
-                df['sentiment_shares'] = list(map(pos_neg_neutral, df['sentiment']))
-                sentiment_pie_dict = dict(df['sentiment_shares'].value_counts())
-                labels = ['Positive','Negative']
-                try: pos = sentiment_pie_dict[1]
-                except: pos = 0
-                try: neg = sentiment_pie_dict[-1]
-                except: neg = 0
-                values = [pos,neg]
-                colors = ['green', 'red']
-                trace = go.Pie(labels=labels, values=values,
-                               hoverinfo='label+percent', textinfo='value', 
-                               textfont=dict(size=20, color=app_colors['text']),
-                               marker=dict(colors=colors, 
-                                           line=dict(color=app_colors['background'], width=2)))
-                return {"data":[trace],'layout' : go.Layout(
-                                                              title='Positive vs Negative sentiment for "{}" (longer-term)'.format(sentiment_term),
-                                                              font={'color':app_colors['text']},
-                                                              plot_bgcolor = app_colors['background'],
-                                                              paper_bgcolor = app_colors['background'],
-                                                              showlegend=True)}
             except:
-                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 10000"),columns = ['date','tweet','sentiment']) 
-                df.sort_values('date', inplace=True)
-                df.set_index('date', inplace=True)
-                init_length = len(df)
-                df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
-                df.dropna(inplace=True)
-                df = df_resample_sizes(df,maxlen=1000)
-                df['sentiment_shares'] = list(map(pos_neg_neutral, df['sentiment']))
-                sentiment_pie_dict = dict(df['sentiment_shares'].value_counts())
-                labels = ['Positive','Negative']
-                try: pos = sentiment_pie_dict[1]
-                except: pos = 0
-                try: neg = sentiment_pie_dict[-1]
-                except: neg = 0
-                values = [pos,neg]
-                colors = ['green', 'red']
-                trace = go.Pie(labels=labels, values=values,
-                               hoverinfo='label+percent', textinfo='value', 
-                               textfont=dict(size=20, color=app_colors['text']),
-                               marker=dict(colors=colors, 
-                                           line=dict(color=app_colors['background'], width=2)))
-                return {"data":[trace],'layout' : go.Layout(
-                                                              title='Positive vs Negative sentiment',
-                                                              font={'color':app_colors['text']},
-                                                              plot_bgcolor = app_colors['background'],
-                                                              paper_bgcolor = app_colors['background'],
-                                                              showlegend=True)}
+                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 10000"),columns = ['date','tweet','sentiment'])  
+                sentiment_term = ''
         else:
             df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 10000"),columns = ['date','tweet','sentiment'])  
-            df.sort_values('date', inplace=True)
-            df.set_index('date', inplace=True)
-            init_length = len(df)
-            df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
-            df.dropna(inplace=True)
-            df = df_resample_sizes(df,maxlen=1000)
-            df['sentiment_shares'] = list(map(pos_neg_neutral, df['sentiment']))
-            sentiment_pie_dict = dict(df['sentiment_shares'].value_counts())
-            labels = ['Positive','Negative']
-            try: pos = sentiment_pie_dict[1]
-            except: pos = 0
-            try: neg = sentiment_pie_dict[-1]
-            except: neg = 0
-            values = [pos,neg]
-            colors = ['green', 'red']
-            trace = go.Pie(labels=labels, values=values,
-                           hoverinfo='label+percent', textinfo='value', 
-                           textfont=dict(size=20, color=app_colors['text']),
-                           marker=dict(colors=colors, 
-                                       line=dict(color=app_colors['background'], width=2)))
-            return {"data":[trace],'layout' : go.Layout(
-                                                          title='Positive vs Negative sentiment',
-                                                          font={'color':app_colors['text']},
-                                                          plot_bgcolor = app_colors['background'],
-                                                          paper_bgcolor = app_colors['background'],
-                                                          showlegend=True)}
+        df.sort_values('date', inplace=True)
+        df.set_index('date', inplace=True)
+        init_length = len(df)
+        df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
+        df.dropna(inplace=True)
+        df = df_resample_sizes(df,maxlen=1000)
+        df['sentiment_shares'] = list(map(pos_neg_neutral, df['sentiment']))
+        sentiment_pie_dict = dict(df['sentiment_shares'].value_counts())
+        labels = ['Positive','Negative']
+        try: pos = sentiment_pie_dict[1]
+        except: pos = 0
+        try: neg = sentiment_pie_dict[-1]
+        except: neg = 0
+        values = [pos,neg]
+        colors = ['green', 'red']
+        trace = go.Pie(labels=labels, values=values,
+                       hoverinfo='label+percent', textinfo='value', 
+                       textfont=dict(size=20, color=app_colors['text']),
+                       marker=dict(colors=colors, 
+                                   line=dict(color=app_colors['background'], width=2)))
+        return {"data":[trace],'layout' : go.Layout(
+                                                      title='Positive vs Negative sentiment for "{}" (longer-term)'.format(sentiment_term),
+                                                      font={'color':app_colors['text']},
+                                                      plot_bgcolor = app_colors['background'],
+                                                      paper_bgcolor = app_colors['background'],
+                                                      showlegend=True)}
     except Exception as e:
         with open('errors.txt','a') as f:
             print(str(e))
             f.write(str(e))
             f.write('\n')
 if __name__ == '__main__':
-    # app.run_server(host = '0.0.0.0',port= 8050,debug =True)
-    app.run_server(debug=True)
+    app.run_server(host = '0.0.0.0',port= 8050,debug =True)
+    # app.run_server(debug=True)
