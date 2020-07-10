@@ -142,7 +142,7 @@ def update_graph_scatter(n,sentiment_term):
         database_connection = db_connection()
         if sentiment_term:
             try:
-                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY date DESC LIMIT 1000", ("%" + sentiment_term + "%",)),columns = ['date','tweet','sentiment'])
+                df = pd.DataFrame(database_connection.execute("SELECT * FROM sentiment_tweets WHERE Match(tweet) Against(%s) ORDER BY date DESC LIMIT 1000;",(sentiment_term)),columns = ['date','tweet','sentiment'])
                 df.sort_values('date', inplace=True)
                 df.set_index('date', inplace=True)
                 init_length = len(df)
@@ -177,7 +177,6 @@ def update_graph_scatter(n,sentiment_term):
                                                   showlegend=False)}
             except:
                 df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 1000"),columns = ['date','tweet','sentiment'])
-                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 1000"),columns = ['date','tweet','sentiment']) 
                 df.sort_values('date', inplace=True)
                 df.set_index('date', inplace=True)
                 init_length = len(df)
@@ -259,7 +258,7 @@ def update_hist_graph_scatter(n,sentiment_term):
         database_connection = db_connection()
         if sentiment_term:
             try:
-                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY date DESC LIMIT 10000", ("%" + sentiment_term + "%",)),columns = ['date','tweet','sentiment'])
+                df = pd.DataFrame(database_connection.execute("SELECT * FROM sentiment_tweets WHERE Match(tweet) Against(%s) ORDER BY date DESC LIMIT 10000;",(sentiment_term)),columns = ['date','tweet','sentiment'])
                 df.set_index('date', inplace=True)
                 init_length = len(df)
                 df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
@@ -292,7 +291,6 @@ def update_hist_graph_scatter(n,sentiment_term):
                                                                   paper_bgcolor = app_colors['background'],
                                                                   showlegend=False)}
             except:
-                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 1000"),columns = ['date','tweet','sentiment']) 
                 df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 10000"),columns = ['date','tweet','sentiment']) 
                 df.set_index('date', inplace=True)
                 init_length = len(df)
@@ -371,7 +369,7 @@ def update_table(n, sentiment_term):
         database_connection = db_connection()
         if sentiment_term:
             try:
-                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY date DESC LIMIT 10", ("%" + sentiment_term + "%",)),columns = ['date','tweet','sentiment'])
+                df = pd.DataFrame(database_connection.execute("SELECT * FROM sentiment_tweets WHERE Match(tweet) Against(%s) ORDER BY date DESC LIMIT 10;",(sentiment_term)),columns = ['date','tweet','sentiment'])
                 df.sort_values('date', inplace=True)
                 df['time'] = df['date'].dt.strftime('%H:%M:%S')
                 df = df[['time','tweet','sentiment']]
@@ -402,7 +400,7 @@ def update_pie_chart(n,sentiment_term):
         database_connection = db_connection()
         if sentiment_term:
             try:
-                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY date DESC LIMIT 10000", ("%" + sentiment_term + "%",)),columns = ['date','tweet','sentiment'])
+                df = pd.DataFrame(database_connection.execute("SELECT * FROM sentiment_tweets WHERE Match(tweet) Against(%s) ORDER BY date DESC LIMIT 10000;",(sentiment_term)),columns = ['date','tweet','sentiment'])
                 df.sort_values('date', inplace=True)
                 df.set_index('date', inplace=True)
                 init_length = len(df)
@@ -491,5 +489,5 @@ def update_pie_chart(n,sentiment_term):
             f.write(str(e))
             f.write('\n')
 if __name__ == '__main__':
-    app.run_server(host = '0.0.0.0',port= 8050,debug =True)
-    # app.run_server(debug=True)
+    # app.run_server(host = '0.0.0.0',port= 8050,debug =True)
+    app.run_server(debug=True)
