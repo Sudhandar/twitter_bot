@@ -10,6 +10,7 @@ import pandas as pd
 import credentials
 from tweepy import OAuthHandler
 import dash_bootstrap_components as dbc
+from dash.exceptions import PreventUpdate
 
 POS_NEG_NEUT = 0.1
 sentiment_colors = {-1:"#EE6055",
@@ -64,6 +65,8 @@ def pos_neg_neutral(col):
 
 app = dash.Dash(external_stylesheets=[dbc.themes.GRID])
 server = app.server
+app.config['suppress_callback_exceptions']=True
+
 app.layout = html.Div(
     [
         dbc.Row(dbc.Col(html.Div([html.H1("Twitter Sentiment Tracker")]),width ={"size":6, "offset":3},sm = 6)),
@@ -78,7 +81,7 @@ app.layout = html.Div(
                         [   
                             html.H2("Live graph"),
                             dcc.Graph(id = 'live_graph', animate = False),
-                            dcc.Interval(id='live_graph_update', interval= 1*1000,n_intervals = 0)
+                            dcc.Interval(id='live_graph_update', interval= 3*1000,n_intervals = 0)
                         ]), width = {"size":6,}, lg= 6 , sm = 12 ),
             dbc.Col(html.Div(
                         [   
@@ -99,7 +102,7 @@ app.layout = html.Div(
                         [   
                             html.H2("Sentiment Pie Chart"),
                             dcc.Graph(id = 'pie_chart', animate = False),
-                            dcc.Interval(id='pie_chart_update', interval= 10*1000,n_intervals = 0)
+                            dcc.Interval(id='pie_chart_update', interval= 20*1000,n_intervals = 0)
                         ]) ,width = {"size":6}, lg = 6, sm= 12)
         ]),
     ]
@@ -138,6 +141,8 @@ def generate_table(df, max_rows=10):
         [Input('live_graph_update', 'n_intervals'),
         Input('sentiment_term', 'value')])
 def update_graph_scatter(n,sentiment_term):
+    if n is None:
+        raise PreventUpdate
     try:
         database_connection = db_connection()
         if sentiment_term:
@@ -190,6 +195,8 @@ def update_graph_scatter(n,sentiment_term):
         [Input('long_graph_update', 'n_intervals'),
         Input('sentiment_term', 'value')])
 def update_hist_graph_scatter(n,sentiment_term):
+    if n is None:
+        raise PreventUpdate
     try:
         database_connection = db_connection()
         if sentiment_term:
@@ -240,6 +247,8 @@ def update_hist_graph_scatter(n,sentiment_term):
         [Input('tweets_table_update', 'n_intervals'),
         Input('sentiment_term', 'value')])
 def update_table(n, sentiment_term):
+    if n is None:
+        raise PreventUpdate
     try:
         database_connection = db_connection()
         if sentiment_term:
@@ -264,6 +273,8 @@ def update_table(n, sentiment_term):
         [Input('pie_chart_update', 'n_intervals'),
         Input('sentiment_term', 'value')])
 def update_pie_chart(n,sentiment_term):
+    if n is None:
+        raise PreventUpdate
     try:
         database_connection = db_connection()
         if sentiment_term:
@@ -306,5 +317,5 @@ def update_pie_chart(n,sentiment_term):
             f.write(str(e))
             f.write('\n')
 if __name__ == '__main__':
-    app.run_server(host = '0.0.0.0',port= 8050,debug =True)
-    # app.run_server(debug=True)
+    app.run_server(host = '0.0.0.0',port= 8050,debug =False)
+    # app.run_server(debug=False)
