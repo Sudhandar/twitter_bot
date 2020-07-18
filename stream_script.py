@@ -7,6 +7,8 @@ import sqlalchemy
 import json
 import pandas as pd
 from unidecode import unidecode
+from notify_run import Notify
+
 
 analyzer = SentimentIntensityAnalyzer()
 
@@ -45,6 +47,11 @@ class listener(StreamListener):
 
 auth = OAuthHandler(credentials.CONSUMER_KEY, credentials.CONSUMER_KEY_SECRET)
 auth.set_access_token(credentials.ACCESS_TOKEN, credentials.ACCESS_TOKEN_SECRET)
+notify = Notify()
 
 twitterStream = Stream(auth, listener())
-twitterStream.filter( languages =['en'], track=["a","e","i","o","u"], stall_warnings = True)
+try:
+	twitterStream.filter( languages =['en'], track=["a","e","i","o","u"], stall_warnings = True)
+except:
+	notify.send('App stopped')
+
