@@ -11,6 +11,7 @@ import credentials
 from tweepy import OAuthHandler
 import dash_bootstrap_components as dbc
 from dash.exceptions import PreventUpdate
+import plotly.express as px
 
 POS_NEG_NEUT = 0.1
 sentiment_colors = {-1:"#EE6055",
@@ -56,12 +57,12 @@ def df_resample_sizes(df, maxlen=MAX_DF_LENGTH):
 def pos_neg_neutral(col):
     if col >= POS_NEG_NEUT:
         # positive
-        return 1
+        return 'Positive'
     elif col <= -POS_NEG_NEUT:
         # negative:
-        return -1
+        return 'Negative'
     else:
-        return 0
+        return 'Neutral'
 
 app = dash.Dash(external_stylesheets=[dbc.themes.GRID])
 server = app.server
@@ -209,9 +210,9 @@ def update_hist_graph_scatter(n,sentiment_term):
             df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 10000"),columns = ['date','tweet','sentiment']) 
         df.set_index('date', inplace=True)
         init_length = len(df)
-        df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
+        df['sentiment_smoothed'] = df['sentiment'].ewm(span=50,adjust=False).mean()
         df.dropna(inplace=True)
-        df = df_resample_sizes(df,maxlen=1000)
+        df = df_resample_sizes(df)        
         X = df.index
         Y = df.sentiment_smoothed.values
         Y2 = df.volume.values
@@ -285,32 +286,44 @@ def update_pie_chart(n,sentiment_term):
                 sentiment_term = ''
         else:
             df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 10000"),columns = ['date','tweet','sentiment'])  
+        df.set_index('date',inplace = True)        
         df.sort_values('date', inplace=True)
-        df.set_index('date', inplace=True)
-        init_length = len(df)
-        df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
+        df['sentiment_ema'] = df['sentiment'].ewm(span=50,adjust=False).mean()
         df.dropna(inplace=True)
-        df = df_resample_sizes(df,maxlen=1000)
-        df['sentiment_shares'] = list(map(pos_neg_neutral, df['sentiment']))
-        sentiment_pie_dict = dict(df['sentiment_shares'].value_counts())
-        labels = ['Positive','Negative']
-        try: pos = sentiment_pie_dict[1]
-        except: pos = 0
-        try: neg = sentiment_pie_dict[-1]
-        except: neg = 0
-        values = [pos,neg]
-        colors = ['green', 'red']
-        trace = go.Pie(labels=labels, values=values,
-                       hoverinfo='label+percent', textinfo='value', 
-                       textfont=dict(size=20, color=app_colors['text']),
-                       marker=dict(colors=colors, 
-                                   line=dict(color=app_colors['background'], width=2)))
-        return {"data":[trace],'layout' : go.Layout(
-                                                      title='Positive vs Negative sentiment for "{}" (longer-term)'.format(sentiment_term),
-                                                      font={'color':app_colors['text']},
-                                                      plot_bgcolor = app_colors['background'],
-                                                      paper_bgcolor = app_colors['background'],
-                                                      showlegend=True)}
+        df = df_resample_sizes(df)        
+        df['sentiment_shares'] = list(map(pos_neg_neutral, df['sentiment_ema']))
+        df = df[df['sentiment_shares']!='Neutral']
+        sentiment_df = pd.DataFrame(df['sentiment_shares'].value_counts())
+        sentiment_df.reset_index(level=0 , inplace = True)
+        sentiment_df.columns = ['term','count']        
+        fig = px.pie(sentiment_df, values='count',
+                                names='term', 
+                                color = 'term',
+                                title = 'Positive vs Negative sentiment for "{}" (longer-term)'.format(sentiment_term),
+                                color_discrete_map = {'Positive': '#2ca02c', 'Negative': 'crimson'})
+        fig.update_layout(font={'size' : 13, 'color': 'black'})
+
+        return fig
+
+        # sentiment_pie_dict = dict(df['sentiment_shares'].value_counts())
+        # labels = ['Positive','Negative']
+        # try: pos = sentiment_pie_dict[1]
+        # except: pos = 0
+        # try: neg = sentiment_pie_dict[-1]
+        # except: neg = 0
+        # values = [pos,neg]
+        # colors = ['green', 'red']
+        # trace = go.Pie(labels=labels, values=values,
+        #                hoverinfo='label+percent', textinfo='value', 
+        #                textfont=dict(size=20, color=app_colors['text']),
+        #                marker=dict(colors=colors, 
+        #                            line=dict(color=app_colors['background'], width=2)))
+        # return {"data":[trace],'layout' : go.Layout(
+        #                                               title='Positive vs Negative sentiment for "{}" (longer-term)'.format(sentiment_term),
+        #                                               font={'color':app_colors['text']},
+        #                                               plot_bgcolor = app_colors['background'],
+        #                                               paper_bgcolor = app_colors['background'],
+        #                                               showlegend=True)}
     except Exception as e:
         with open('errors.txt','a') as f:
             print(str(e))
