@@ -1,2 +1,3 @@
-# twitter_bot
-A twitter bot trained on reddit comments
+# Twitter Live Sentiment Tracker
+
+A python dash app to track real time sentiments of tweets
