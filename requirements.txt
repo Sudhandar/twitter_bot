@@ -8,3 +8,9 @@ dash-renderer
 dash-html-components
 dash-core-components
 plotly
+sqlalchemy
+pymysql
+unidecode
+json
+notify_run
+vaderSentiment
