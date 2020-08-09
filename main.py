@@ -13,7 +13,7 @@ import dash_bootstrap_components as dbc
 from dash.exceptions import PreventUpdate
 import plotly.express as px
 
-POS_NEG_NEUT = 0.1
+POS_NEG_NEUT = 0
 sentiment_colors = {-1:"#EE6055",
                     -0.5:"#FDE74C",
                      0:"#FFE6AC",
@@ -273,7 +273,7 @@ def update_table(n, sentiment_term):
 @app.callback(Output('pie_chart', 'figure'),
         [Input('pie_chart_update', 'n_intervals'),
         Input('sentiment_term', 'value')])
-def update_pie_chart(n,sentiment_term):
+def update_pie_chart(n, sentiment_term):
     if n is None:
         raise PreventUpdate
     try:
@@ -286,11 +286,11 @@ def update_pie_chart(n,sentiment_term):
                 sentiment_term = ''
         else:
             df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 10000"),columns = ['date','tweet','sentiment'])  
-        df.set_index('date',inplace = True)        
+        df.set_index('date',inplace = True)
         df.sort_values('date', inplace=True)
         df['sentiment_ema'] = df['sentiment'].ewm(span=50,adjust=False).mean()
         df.dropna(inplace=True)
-        df = df_resample_sizes(df)        
+        df = df_resample_sizes(df)
         df['sentiment_shares'] = list(map(pos_neg_neutral, df['sentiment_ema']))
         df = df[df['sentiment_shares']!='Neutral']
         sentiment_df = pd.DataFrame(df['sentiment_shares'].value_counts())
@@ -304,32 +304,11 @@ def update_pie_chart(n,sentiment_term):
         fig.update_layout(font={'size' : 13, 'color': 'black'})
 
         return fig
-
-        # sentiment_pie_dict = dict(df['sentiment_shares'].value_counts())
-        # labels = ['Positive','Negative']
-        # try: pos = sentiment_pie_dict[1]
-        # except: pos = 0
-        # try: neg = sentiment_pie_dict[-1]
-        # except: neg = 0
-        # values = [pos,neg]
-        # colors = ['green', 'red']
-        # trace = go.Pie(labels=labels, values=values,
-        #                hoverinfo='label+percent', textinfo='value', 
-        #                textfont=dict(size=20, color=app_colors['text']),
-        #                marker=dict(colors=colors, 
-        #                            line=dict(color=app_colors['background'], width=2)))
-        # return {"data":[trace],'layout' : go.Layout(
-        #                                               title='Positive vs Negative sentiment for "{}" (longer-term)'.format(sentiment_term),
-        #                                               font={'color':app_colors['text']},
-        #                                               plot_bgcolor = app_colors['background'],
-        #                                               paper_bgcolor = app_colors['background'],
-        #                                               showlegend=True)}
     except Exception as e:
         with open('errors.txt','a') as f:
             print(str(e))
             f.write(str(e))
             f.write('\n')
-            
 if __name__ == '__main__':
     app.run_server(host = '0.0.0.0',port= 8050,debug =False)
     # app.run_server(debug=False)
