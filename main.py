@@ -56,10 +56,8 @@ def df_resample_sizes(df, maxlen=MAX_DF_LENGTH):
 
 def pos_neg_neutral(col):
     if col > POS_NEG_NEUT:
-        # positive
         return 'Positive'
     elif col < POS_NEG_NEUT:
-        # negative:
         return 'Negative'
     else:
         return 'Neutral'
@@ -109,9 +107,9 @@ app.layout = html.Div(
     ]
 )
 def quick_color(s):
-    if s >= POS_NEG_NEUT:
+    if s > POS_NEG_NEUT:
         return "#2ca02c"
-    elif s <= -POS_NEG_NEUT:
+    elif s < POS_NEG_NEUT:
         return "crimson"
     else:
         return '#7f7f7f'
@@ -157,7 +155,7 @@ def update_graph_scatter(n,sentiment_term):
         df.sort_values('date', inplace=True)
         df.set_index('date', inplace=True)
         init_length = len(df)
-        df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
+        df['sentiment_smoothed'] = df['sentiment'].ewm(span=50,adjust=False).mean()
         df = df_resample_sizes(df)
         X = df.index
         Y = df.sentiment_smoothed.values
