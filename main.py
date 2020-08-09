@@ -55,10 +55,10 @@ def df_resample_sizes(df, maxlen=MAX_DF_LENGTH):
     return df
 
 def pos_neg_neutral(col):
-    if col >= POS_NEG_NEUT:
+    if col > POS_NEG_NEUT:
         # positive
         return 'Positive'
-    elif col <= -POS_NEG_NEUT:
+    elif col < POS_NEG_NEUT:
         # negative:
         return 'Negative'
     else:
@@ -212,7 +212,7 @@ def update_hist_graph_scatter(n,sentiment_term):
         init_length = len(df)
         df['sentiment_smoothed'] = df['sentiment'].ewm(span=50,adjust=False).mean()
         df.dropna(inplace=True)
-        df = df_resample_sizes(df)        
+        df = df_resample_sizes(df, 1000)  
         X = df.index
         Y = df.sentiment_smoothed.values
         Y2 = df.volume.values
@@ -290,7 +290,7 @@ def update_pie_chart(n, sentiment_term):
         df.sort_values('date', inplace=True)
         df['sentiment_ema'] = df['sentiment'].ewm(span=50,adjust=False).mean()
         df.dropna(inplace=True)
-        df = df_resample_sizes(df)
+        df = df_resample_sizes(df, 1000)
         df['sentiment_shares'] = list(map(pos_neg_neutral, df['sentiment_ema']))
         df = df[df['sentiment_shares']!='Neutral']
         sentiment_df = pd.DataFrame(df['sentiment_shares'].value_counts())
