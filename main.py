@@ -155,7 +155,7 @@ def update_graph_scatter(n,sentiment_term):
         df.sort_values('date', inplace=True)
         df.set_index('date', inplace=True)
         init_length = len(df)
-        df['sentiment_smoothed'] = df['sentiment'].ewm(span=50,adjust=False).mean()
+        df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
         df = df_resample_sizes(df)
         X = df.index
         Y = df.sentiment_smoothed.values
@@ -252,15 +252,17 @@ def update_table(n, sentiment_term):
         database_connection = db_connection()
         if sentiment_term:
             try:
-                df = pd.DataFrame(database_connection.execute("SELECT * FROM sentiment_tweets WHERE Match(tweet) Against(%s) ORDER BY date DESC LIMIT 10;",(sentiment_term)),columns = ['date','tweet','sentiment'])
+                df = pd.DataFrame(database_connection.execute("SELECT * FROM sentiment_tweets WHERE Match(tweet) Against(%s) ORDER BY date DESC LIMIT 40;",(sentiment_term)),columns = ['date','tweet','sentiment'])
             except:
-                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 10"),columns = ['date','tweet','sentiment'])        
+                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 40"),columns = ['date','tweet','sentiment'])        
                 sentiment_term = ''
         else:
-            df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 10"),columns = ['date','tweet','sentiment'])        
+            df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 40"),columns = ['date','tweet','sentiment'])        
         df.sort_values('date', inplace=True)
         df['time'] = df['date'].dt.strftime('%H:%M:%S')
         df = df[['time','tweet','sentiment']]
+        df = df.drop_duplicates(subset = 'tweet')
+        df = df[:10]
         return generate_table(df)
     except Exception as e:
         with open('errors.txt','a') as f:
