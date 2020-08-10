@@ -252,13 +252,13 @@ def update_table(n, sentiment_term):
         database_connection = db_connection()
         if sentiment_term:
             try:
-                df = pd.DataFrame(database_connection.execute("SELECT * FROM sentiment_tweets WHERE Match(tweet) Against(%s) ORDER BY date DESC LIMIT 40;",(sentiment_term)),columns = ['date','tweet','sentiment'])
+                df = pd.DataFrame(database_connection.execute("SELECT * FROM sentiment_tweets WHERE Match(tweet) Against(%s) ORDER BY date DESC LIMIT 20;",(sentiment_term)),columns = ['date','tweet','sentiment'])
             except:
-                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 40"),columns = ['date','tweet','sentiment'])        
+                df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 20"),columns = ['date','tweet','sentiment'])        
                 sentiment_term = ''
         else:
-            df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 40"),columns = ['date','tweet','sentiment'])        
-        df.sort_values('date', inplace=True)
+            df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 20"),columns = ['date','tweet','sentiment'])        
+        df.sort_values('date', inplace=True , ascending = True)
         df['time'] = df['date'].dt.strftime('%H:%M:%S')
         df = df[['time','tweet','sentiment']]
         df = df.drop_duplicates(subset = 'tweet')
