@@ -258,7 +258,6 @@ def update_table(n, sentiment_term):
                 sentiment_term = ''
         else:
             df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets ORDER BY date DESC LIMIT 20"),columns = ['date','tweet','sentiment'])        
-        df.sort_values('date', inplace=True , ascending = True)
         df['time'] = df['date'].dt.strftime('%H:%M:%S')
         df = df[['time','tweet','sentiment']]
         df = df.drop_duplicates(subset = 'tweet')
