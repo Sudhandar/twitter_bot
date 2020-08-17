@@ -13,6 +13,18 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 
 POS_NEG_NEUT = 0.1
+sentiment_colors = {-1:"#EE6055",
+                    -0.5:"#FDE74C",
+                     0:"#FFE6AC",
+                     0.5:"#D0F2DF",
+                     1:"#9CEC5B",}
+app_colors = {
+    'background': 'white',
+    'text': 'black',
+    'sentiment-plot':'#41EAD4',
+    'volume-bar':'yellow',
+    'someothercolor':'#FF206E',
+}
 def pos_neg_neutral(col):
     if col >= POS_NEG_NEUT:
         # positive
@@ -192,9 +204,9 @@ def quick_color(s):
 
 # 	return trends
 
-@app.callback(Output('pie-chart', 'figure'),
-		[Input('pie-update', 'n_intervals'),
-		Input(component_id = 'sentiment_term', component_property = 'value')])
+# @app.callback(Output('pie-chart', 'figure'),
+# 		[Input('pie-update', 'n_intervals'),
+# 		Input(component_id = 'sentiment_term', component_property = 'value')])
 
 
 def update_graph_pie(n, sentiment_term):
@@ -218,7 +230,11 @@ def update_graph_pie(n, sentiment_term):
         sentiment_df.reset_index(level=0 , inplace = True)
         sentiment_df.columns = ['term','count']        
         colors = ['green', 'red']
-        fig = px.pie(sentiment_df, values='count', names='term', color = 'term',title = 'Positive vs Negative sentiment for "{}" (longer-term)'.format(sentiment_term),color_discrete_map = {'Positive': 'green', 'Negative': 'red'})
+        fig = px.pie(sentiment_df, values='count',
+                                names='term', 
+                                color = 'term',
+                                title = 'Positive vs Negative sentiment for "{}" (longer-term)'.format(sentiment_term),
+                                color_discrete_map = {'Positive': 'green', 'Negative': 'red'})
         return fig
     except Exception as e:
     	with open('errors.txt','a') as f:
