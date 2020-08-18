@@ -207,6 +207,7 @@ def quick_color(s):
 # @app.callback(Output('pie-chart', 'figure'),
 # 		[Input('pie-update', 'n_intervals'),
 # 		Input(component_id = 'sentiment_term', component_property = 'value')])
+# python seq_wc.py --load_arg checkpoint/cwlm_lstm_crf.json --load_check_point checkpoint/cwlm_lstm_crf.model --input_file input.tsv --output_file annotate/output --gpu 0
 
 
 def update_graph_pie(n, sentiment_term):
