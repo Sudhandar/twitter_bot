@@ -46,48 +46,7 @@ app.layout = html.Div(
 )
 def update_output_div(input_value):
     print(f"{input_value}")
-# app.layout = html.Div(
-#     [
-#         dbc.Row(dbc.Col(html.Div([html.H1("Twitter Sentiment Tracker")]),width ={"size":6, "offset":3},sm = 6)),
-
-#         dbc.Row(dbc.Col(html.Div(children = [
-#                                 html.Div(children = 'Enter search term'),
-#                                 dcc.Input(id = 'sentiment_term', value = 'trump', type = 'text', debounce = True),
-#                                 ]),sm = 4)),
-#         dbc.Row(
-#         [
-#             dbc.Col(html.Div(
-#                         [   
-#                             html.H2("Live graph"),
-#                             dcc.Graph(id = 'live_graph', animate = False),
-#                             dcc.Interval(id='live_graph_update', interval= 3*1000,n_intervals = 0)
-#                         ]), width = {"size":6,}, lg= 6 , sm = 12 ),
-#             dbc.Col(html.Div(
-#                         [   
-#                             html.H2("Historical Graph"),
-#                             dcc.Graph(id = 'long_graph', animate = False),
-#                             dcc.Interval(id='long_graph_update', interval= 30*1000,n_intervals = 0)
-#                         ]) ,width = {"size":6}, lg = 6 , sm = 12)
-#         ]),
-#         dbc.Row(
-#         [
-#             dbc.Col(html.Div(
-#                         [   
-#                             html.H2("Tweets Table"),
-#                             html.Div(children = [html.Div(id = 'tweets_table')]),
-#                             dcc.Interval(id='tweets_table_update', interval= 10*1000,n_intervals = 0)
-#                         ]), width = {"size":6,},lg = 6, sm = 12),
-#             dbc.Col(html.Div(
-#                         [   
-#                             html.H2("Sentiment Pie Chart"),
-#                             dcc.Graph(id = 'pie_chart', animate = False),
-#                             dcc.Interval(id='pie_chart_update', interval= 20*1000,n_intervals = 0)
-#                         ]) ,width = {"size":6}, lg = 6, sm= 12)
-#         ]),
-#     ]
-# )
-
-@app.callback(Output('live_graph', 'figure'),
+/@app.callback(Output('live_graph', 'figure'),
         [Input('live_graph_update', 'n_intervals'),
         Input('sentiment_term', 'value')])
 def update_graph_scatter(n,sentiment_term):
