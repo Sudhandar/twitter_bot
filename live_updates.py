@@ -1,245 +1,162 @@
-import dash
-from dash.dependencies import Output, Input
-import dash_core_components as dcc
-import dash_html_components as html
-from tweepy import API
-import plotly
-import plotly.graph_objs as go 
+# import dash
+# from dash.dependencies import Output, Input
+# import dash_core_components as dcc
+# import dash_html_components as html
 import sqlalchemy
-import pandas as pd
-import credentials
-from tweepy import OAuthHandler
-import dash_bootstrap_components as dbc
-import plotly.express as px
+# import pandas as pd
+# import plotly.express as px
+# from dash.exceptions import PreventUpdate
+# import dash_bootstrap_components as dbc
+# import pydeck as pdk
 
-POS_NEG_NEUT = 0.1
-sentiment_colors = {-1:"#EE6055",
-                    -0.5:"#FDE74C",
-                     0:"#FFE6AC",
-                     0.5:"#D0F2DF",
-                     1:"#9CEC5B",}
-app_colors = {
-    'background': 'white',
-    'text': 'black',
-    'sentiment-plot':'#41EAD4',
-    'volume-bar':'yellow',
-    'someothercolor':'#FF206E',
-}
-def pos_neg_neutral(col):
-    if col >= POS_NEG_NEUT:
-        # positive
-        return 'Positive'
-    elif col <= -POS_NEG_NEUT:
-        # negative:
-        return 'Negative'
-    else:
-        return 'Neutral'
+# MAPBOX_API_KEY = 'sk.eyJ1Ijoic3VkaGFuZGFyIiwiYSI6ImNraHZnOTZkcTBldHAzNG1vZWp4ODh4djkifQ.sDKYtSCk1WTVAvf5qZDeVA'
 
 
-app = dash.Dash(external_stylesheets=[dbc.themes.CYBORG])
+# def db_connection():
+#     database_username = 'root'
+#     database_password = ''
+#     database_ip = 'localhost'
+#     database_name = 'twitter_streaming'
+#     database_connection = sqlalchemy.create_engine(
+#        'mysql+pymysql://{0}:{1}@{2}/{3}'.format(
+#            database_username, database_password,
+#            database_ip, database_name
+#        )
+#     )
+#     return database_connection
+# def grouping(x):
+#   if x >0.5:
+#     return 1
+#   elif (x >0) and (x<=0.5):
+#     return 0.5
+#   elif (x<0) and (x>=-0.5):
+#     return -0.5
+#   elif x<0.5:
+#     return -1
+#   elif x == 0:
+#     return 0
 
-app.layout = html.Div(
-    [	html.H2('Live Twitter Sentiment'),
-    	dcc.Input(id = 'sentiment_term', value = 'trump', type = 'text'),
-        dcc.Graph(id = 'live-graph', animate = False),
-        dcc.Interval(
-            id='graph-update',
-            interval= 1*1000,
-            n_intervals = 0
-        ),
+# app = dash.Dash()
 
-        dcc.Graph(id = 'pie-chart', animate = False),
-        dcc.Interval(
-            id='pie-update',
-            interval= 10*1000,
-            n_intervals = 0
-        ),
-        
+# maps = html.Div([
+#                   dcc.Input(id = 'input_term', value = 'trump', type = 'text', debounce = True),
+#                   dcc.Graph(id = 'heatmap', animate = False),
+#                   ])
+# app.layout = html.Div(
+#   [
+#     dbc.Row([dbc.Col(maps)])
+#     ])
 
+# # @app.callback(Output('heatmap', 'figure'),[Input('input_term', 'value')])
+# # def update_heatmap(input_term):
+# #     database_connection = db_connection()
+# #     df = pd.DataFrame(database_connection.execute("SELECT * FROM sentiment_tweets WHERE  latitude NOT IN (0)  ORDER BY date DESC;"),columns = ['date','tweet','sentiment','latitude','longitude'])
+# #     df['sentiment'] = df['sentiment'].apply(lambda x : grouping(x))
+# #     print(df.shape[0])
+# #     # fig = px.scatter_geo(df, lat='latitude', lon='longitude',
+# #     #                         center=dict(lat=50, lon=-100),scope = 'north america')
+# #     fig = px.density_mapbox(df, lat='latitude', lon='longitude', z='sentiment', radius=10,
+# #                       center=dict(lat=40, lon=-90), zoom=2,
+# #                       mapbox_style="stamen-terrain")
 
-		html.Div(children = 'Recent Trends', style = {'textAlign' :'center'}),
-
-
-        html.Div(children = [html.Div(id = 'recent_trends')]),
-        dcc.Interval(
-        	id = 'trend_interval',
-        	interval = 30*1000,
-        	n_intervals = 0),
-
-		html.Div(children = 'Latest Tweets', style = {'textAlign' :'center'}),
-
-        html.Div(children = [html.Div(id = 'recent_tweets_table')]),
-        dcc.Interval(
-            id='recent_tweets_table_update',
-            interval= 10*1000,
-            n_intervals = 0
-        ),
-        
-], className = 'container', style = {'width':'50%', 'margin-left' : 10, 'margin-right' : 10}
-)
-
-def quick_color(s):
-    if s >= POS_NEG_NEUT:
-        return "#2ca02c"
-    elif s <= -POS_NEG_NEUT:
-        return "#d62728"
-    else:
-        return '#7f7f7f'
-
-# def generate_table(df, max_rows=10):
-#     return html.Table(className="responsive-table",
-#                       children=[
-#                           html.Thead(
-#                               html.Tr(
-#                                   children=[
-#                                       html.Th(col.title()) for col in df.columns.values],
-                              
-#                                   )
-#                               ),
-#                           html.Tbody(
-#                               [
-                                  
-#                               html.Tr(
-#                                   children=[
-#                                       html.Td(data) for data in d
-#                                       ], style={'color':'#FFFFFF',
-#                                                 'background-color':quick_color(d[2])}
-#                                   )
-#                                for d in df.values.tolist()])
-#                           ]
+# #     return fig
+# @app.callback(Output('heatmap', 'figure'),[Input('input_term', 'value')])
+# def update_heatmap(input_term):
+#     database_connection = db_connection()
+#     df = pd.DataFrame(database_connection.execute("SELECT longitude,latitude FROM sentiment_tweets WHERE  latitude NOT IN (0)  ORDER BY date DESC;"),columns = ['longitude','latitude'])
+#     # fig = px.scatter_geo(df, lat='latitude', lon='longitude',
+#     #                         center=dict(lat=50, lon=-100),scope = 'north america')
+#     layer = pdk.Layer(
+#         "HexagonLayer",
+#         df,
+#         get_position=["longitude", "latitude"],
+#         auto_highlight=True,
+#         elevation_scale=50,
+#         pickable=True,
+#         elevation_range=[0, 3000],
+#         extruded=True,
+#         coverage=1,
 #     )
 
-
-# @app.callback(Output('live-graph', 'figure'),
-# 		[Input('graph-update', 'n_intervals'),
-# 		Input(component_id = 'sentiment_term', component_property = 'value')])
-
-
-# def update_graph_scatter(n, sentiment_term):
-
-# 	try:
-
-# 		database_username = 'root'
-# 		database_password = ''
-# 		database_ip = 'localhost'
-# 		database_name = 'twitter_streaming'
-# 		database_connection = sqlalchemy.create_engine(
-# 		   'mysql+pymysql://{0}:{1}@{2}/{3}'.format(
-# 		       database_username, database_password,
-# 		       database_ip, database_name
-# 		   )
-# 		)
-
-# 		df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
-# 		df.sort_values('unix', inplace=True)
-# 		df['date'] = pd.to_datetime(df['unix'], unit = 'ms')
-# 		df.set_index('date', inplace = True)
-# 		df['sentiment_smoothed'] = df['sentiment'].rolling(int(len(df)/5)).mean()
-# 		df.dropna(inplace=True)
-# 		df = df.resample('1s').mean()
-
-# 		X = df.index[-100:]
-# 		Y = df.sentiment.values[-100:]
-
-# 		data = go.Scatter(
-# 			    x=list(X),
-# 			    y=list(Y),
-# 			    name='Scatter',
-# 			    mode= 'lines',
-# 			    )
-
-# 		return {'data': [data],'layout' : go.Layout(xaxis=dict(range=[min(X),max(X)]),
-# 		                                            yaxis=dict(range=[min(Y),max(Y)]),
-# 		                                            title = 'Term : {}'.format(sentiment_term))}
-
-# 	except Exception as e:
-# 		with open('errors.txt','a') as f:
-# 			f.write(str(e))
-# 			f.write('\n')
-
-# @app.callback(Output('recent_tweets_table', 'children'),
-# 		[Input('recent_tweets_table_update', 'n_intervals'),
-# 		Input(component_id = 'sentiment_term', component_property = 'value')])
-
-# def update_table(n, sentiment_term):
-
-# 	try:
-
-# 		database_username = 'root'
-# 		database_password = ''
-# 		database_ip = 'localhost'
-# 		database_name = 'twitter_streaming'
-# 		database_connection = sqlalchemy.create_engine(
-# 		   'mysql+pymysql://{0}:{1}@{2}/{3}'.format(
-# 		       database_username, database_password,
-# 		       database_ip, database_name
-# 		   )
-# 		)
-
-# 		df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 10", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
-# 		df.sort_values('unix', inplace=True)
-# 		df['date'] = pd.to_datetime(df['unix'], unit = 'ms')
-# 		df.pop('unix')
-# 		df = df[['date','tweet','sentiment']]
-
-# 		return generate_table(df,10)
-
-# 	except Exception as e:
-# 		with open('errors.txt','a') as f:
-# 			f.write(str(e))
-# 			f.write('\n')
-
-# @app.callback(Output('recent_trends', 'children'),
-# 		[Input('trend_interval', 'n_intervals'),])
+#     # Set the viewport location
+#     view_state = pdk.ViewState(
+#         longitude=-90,
+#         latitude=40,
+#         zoom=6,
+#         min_zoom=5,
+#         max_zoom=15,
+#         pitch=40.5,
+#         bearing=-27.36,
+#     )
+#     # Render
+#     fig = pdk.Deck(layers=[layer], initial_view_state=view_state,mapbox_key = MAPBOX_API_KEY)
+#     # r.to_html("hexagon_layer.html")
+#     return fig
 
 
-# def recent_trends_df(n):
+# if __name__ == '__main__':
+#     app.run_server(debug=True)
 
-# 	auth = OAuthHandler(credentials.CONSUMER_KEY, credentials.CONSUMER_KEY_SECRET)
-# 	auth.set_access_token(credentials.ACCESS_TOKEN, credentials.ACCESS_TOKEN_SECRET)
-# 	api = API(auth)
-# 	trends1 = api.trends_place(23424848)
-# 	data = trends1[0]['trends']
-# 	trends = [trend['name'] for trend in data][:10]
+import dash
+import dash_deck
+import dash_html_components as html
+import pydeck as pdk
+import pandas as pd
 
-# 	return trends
+mapbox_api_token = 'pk.eyJ1Ijoic3VkaGFuZGFyIiwiYSI6ImNraHZmdXlwajE3NDgyeHBpa213NDVxOG8ifQ.P02Pv5ZWgZyAiFLtfEEMvg'
+# MAPBOX_API_KEY = 'sk.eyJ1Ijoic3VkaGFuZGFyIiwiYSI6ImNraHZnOTZkcTBldHAzNG1vZWp4ODh4djkifQ.sDKYtSCk1WTVAvf5qZDeVA'
+def db_connection():
+    database_username = 'root'
+    database_password = ''
+    database_ip = 'localhost'
+    database_name = 'twitter_streaming'
+    database_connection = sqlalchemy.create_engine(
+       'mysql+pymysql://{0}:{1}@{2}/{3}'.format(
+           database_username, database_password,
+           database_ip, database_name
+       )
+    )
+    return database_connection
+database_connection = db_connection()
 
-# @app.callback(Output('pie-chart', 'figure'),
-# 		[Input('pie-update', 'n_intervals'),
-# 		Input(component_id = 'sentiment_term', component_property = 'value')])
+df = pd.DataFrame(database_connection.execute("SELECT longitude,latitude FROM sentiment_tweets WHERE  latitude NOT IN (0)  ORDER BY date DESC;"),columns = ['longitude','latitude'])
 
 
-def update_graph_pie(n, sentiment_term):
+# HEXAGON_LAYER_DATA = "https://raw.githubusercontent.com/visgl/deck.gl-data/master/examples/3d-heatmap/heatmap-data.csv"  # noqa
 
-    try:
-        database_username = 'root'
-        database_password = ''
-        database_ip = 'localhost'
-        database_name = 'twitter_streaming'
-        database_connection = sqlalchemy.create_engine(
-           'mysql+pymysql://{0}:{1}@{2}/{3}'.format(
-               database_username, database_password,
-               database_ip, database_name
-           )
-        )
-        df = pd.DataFrame(database_connection.execute(" SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY date DESC LIMIT 1000", ("%" + sentiment_term + "%",)),columns = ['unix','tweet','sentiment'])
-        df.sort_values('unix', inplace=True)
-        df['sentiment_shares'] = list(map(pos_neg_neutral, df['sentiment']))
-        df = df[df['sentiment_shares']!='Neutral']
-        sentiment_df = pd.DataFrame(df['sentiment_shares'].value_counts())
-        sentiment_df.reset_index(level=0 , inplace = True)
-        sentiment_df.columns = ['term','count']        
-        colors = ['green', 'red']
-        fig = px.pie(sentiment_df, values='count',
-                                names='term', 
-                                color = 'term',
-                                title = 'Positive vs Negative sentiment for "{}" (longer-term)'.format(sentiment_term),
-                                color_discrete_map = {'Positive': 'green', 'Negative': 'red'})
-        return fig
-    except Exception as e:
-    	with open('errors.txt','a') as f:
-    		f.write(str(e))
-    		f.write('\n')
-if __name__ == '__main__':
-    app.run_server(debug=False)
+# Define a layer to display on a map
+layer = pdk.Layer(
+    "HexagonLayer",
+    df,
+    get_position=["longitude", "latitude"],
+    auto_highlight=True,
+    elevation_scale=200,
+    pickable=True,
+    elevation_range=[0, 3000],
+    extruded=True,
+    coverage=1,
+)
 
+# Set the viewport location
+view_state = pdk.ViewState(
+    longitude=-90,
+    latitude=40,
+    zoom=4,
+    min_zoom=2,
+    max_zoom=15,
+    pitch=40.5,
+    bearing=-27.36,
+)
+
+r = pdk.Deck(layers=[layer], initial_view_state=view_state)
+
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div(
+    dash_deck.DeckGL(r.to_json(), id="deck-gl", mapboxKey=mapbox_api_token)
+)
+
+
+if __name__ == "__main__":
+    app.run_server(debug=True)

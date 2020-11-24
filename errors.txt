@@ -1418,3 +1418,3492 @@ index -1 is out of bounds for axis 0 with size 0
 Can only use .str accessor with string values!
 index -1 is out of bounds for axis 0 with size 0
 index -1 is out of bounds for axis 0 with size 0
+Can only use .dt accessor with datetimelike values
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+Can only use .dt accessor with datetimelike values
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+Can only use .dt accessor with datetimelike values
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+min() arg is an empty sequence
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+Can only use .dt accessor with datetimelike values
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+Can only use .dt accessor with datetimelike values
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+Can only use .dt accessor with datetimelike values
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+Can only use .dt accessor with datetimelike values
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+Can only use .dt accessor with datetimelike values
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+(pymysql.err.InternalError) (1054, "Unknown column 'unix' in 'order clause'")
+[SQL:  SELECT * FROM sentiment_tweets WHERE tweet LIKE %s ORDER BY unix DESC LIMIT 1000]
+[parameters: ('%trump%',)]
+(Background on this error at: http://sqlalche.me/e/2j85)
+pie() got an unexpected keyword argument 'font'
+pie() got an unexpected keyword argument 'font'
+pie() got an unexpected keyword argument 'font'
+pie() got an unexpected keyword argument 'font'
+pie() got an unexpected keyword argument 'font'
+(pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([Errno 111] Connection refused)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([Errno 111] Connection refused)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([Errno 111] Connection refused)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([Errno 111] Connection refused)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+local variable 'sentiment_term' referenced before assignment
+local variable 'sentiment_term' referenced before assignment
+local variable 'sentiment_term' referenced before assignment
+'DataFrame' object has no attribute 'volume'
+'DataFrame' object has no attribute 'volume'
+pie() got an unexpected keyword argument 'textfont_size'
+pie() got an unexpected keyword argument 'textfont_size'
+pie() got an unexpected keyword argument 'textfont_size'
+index -1 is out of bounds for axis 0 with size 0
+(pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+Can only use .dt accessor with datetimelike values
+index -1 is out of bounds for axis 0 with size 0
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+Object of type 'DataFrame' is not JSON serializable
+Object of type 'DataFrame' is not JSON serializable
+Object of type 'DataFrame' is not JSON serializable
+Object of type 'DataFrame' is not JSON serializable
+Object of type 'DataFrame' is not JSON serializable
+Object of type 'DataFrame' is not JSON serializable
+name 'df_json' is not defined
+name 'df_json' is not defined
+Object of type 'DataFrame' is not JSON serializable
+Object of type 'DataFrame' is not JSON serializable
+Object of type 'DataFrame' is not JSON serializable
+Object of type 'method' is not JSON serializable
+Object of type 'method' is not JSON serializable
+Object of type 'method' is not JSON serializable
+the JSON object must be str, bytes or bytearray, not 'NoneType'
+the JSON object must be str, bytes or bytearray, not 'NoneType'
+Object of type 'method' is not JSON serializable
+the JSON object must be str, bytes or bytearray, not 'NoneType'
+the JSON object must be str, bytes or bytearray, not 'NoneType'
+Object of type 'method' is not JSON serializable
+the JSON object must be str, bytes or bytearray, not 'NoneType'
+Object of type 'method' is not JSON serializable
+the JSON object must be str, bytes or bytearray, not 'NoneType'
+'sentiment_ema'
+'sentiment_ema'
+'sentiment_ema'
+'sentiment_ema'
+'sentiment_ema'
+'sentiment_ema'
+'sentiment_ema'
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+local variable 'df' referenced before assignment
+local variable 'df' referenced before assignment
+local variable 'df' referenced before assignment
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'quick_color' is not defined
+name 'POS_NEG_NEUT' is not defined
+name 'POS_NEG_NEUT' is not defined
+name 'POS_NEG_NEUT' is not defined
+name 'POS_NEG_NEUT' is not defined
+name 'POS_NEG_NEUT' is not defined
+Can only use .dt accessor with datetimelike values
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+Can only use .dt accessor with datetimelike values
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'text'
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'geo'
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'geo'
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'geo'
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'geo'
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'NoneType' object is not subscriptable
+'geo'
+(pymysql.err.InternalError) (1364, "Field 'latitude' doesn't have a default value")
+[SQL: INSERT INTO sentiment_tweets (date, tweet, sentiment) VALUES (%(date)s, %(tweet)s, %(sentiment)s)]
+[parameters: {'date': datetime.datetime(2020, 11, 23, 15, 43, 40), 'tweet': 'day 2 with no nic :( armaan pulling up in the morning wit it doe ', 'sentiment': 0.0531}]
+(Background on this error at: http://sqlalche.me/e/2j85)
+3 columns passed, passed data had 4 columns
+3 columns passed, passed data had 4 columns
+3 columns passed, passed data had 4 columns
+3 columns passed, passed data had 4 columns
+3 columns passed, passed data had 4 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+(pymysql.err.InternalError) (1054, "Unknown column 'latitutde' in 'field list'")
+[SQL: INSERT INTO sentiment_tweets (date, tweet, sentiment, latitutde, longitude) VALUES (%(date)s, %(tweet)s, %(sentiment)s, %(latitutde)s, %(longitude)s)]
+[parameters: {'date': datetime.datetime(2020, 11, 23, 10, 30, 21), 'tweet': '@Dakota_Schmidt I used to be good....what ya got??', 'sentiment': 0.0, 'latitutde': 41.72972973, 'longitude': -91.6240498}]
+(Background on this error at: http://sqlalche.me/e/2j85)
+3 columns passed, passed data had 5 columns
+(pymysql.err.InternalError) (1054, "Unknown column 'latitutde' in 'field list'")
+[SQL: INSERT INTO sentiment_tweets (date, tweet, sentiment, latitutde, longitude) VALUES (%(date)s, %(tweet)s, %(sentiment)s, %(latitutde)s, %(longitude)s)]
+[parameters: {'date': datetime.datetime(2020, 11, 23, 10, 30, 28), 'tweet': 'Life is worth celebrating !! Every chapter matter.\nFor my  #blood brother @yah_is1  we celebrated his 34, and coul... https://t.co/Htn9k7QGb0', 'sentiment': 0.8745, 'latitutde': 40.72793, 'longitude': -73.99928}]
+(Background on this error at: http://sqlalche.me/e/2j85)
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+name 'latitude' is not defined
+name 'latitude' is not defined
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 5 columns
+3 columns passed, passed data had 4 columns
+3 columns passed, passed data had 4 columns
+3 columns passed, passed data had 4 columns
+3 columns passed, passed data had 4 columns
+3 columns passed, passed data had 4 columns
+3 columns passed, passed data had 4 columns
+3 columns passed, passed data had 4 columns
+3 columns passed, passed data had 4 columns
+3 columns passed, passed data had 4 columns
+3 columns passed, passed data had 4 columns
+3 columns passed, passed data had 4 columns
+3 columns passed, passed data had 4 columns
+3 columns passed, passed data had 4 columns
+index -1 is out of bounds for axis 0 with size 0
+index -1 is out of bounds for axis 0 with size 0
+Can only use .dt accessor with datetimelike values
+index -1 is out of bounds for axis 0 with size 0
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+(pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+'NoneType' object has no attribute 'address'
+HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=No.+Georgia&format=json&limit=1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fc7df8ed5c0>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)'))
+'NoneType' object has no attribute 'address'
+'NoneType' object has no attribute 'address'
+'NoneType' object has no attribute 'address'
+'NoneType' object has no attribute 'address'
+'NoneType' object has no attribute 'address'
+'NoneType' object has no attribute 'address'
+'NoneType' object has no attribute 'address'
+'NoneType' object has no attribute 'address'
+'NoneType' object has no attribute 'address'
+HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Atlanta%2C+GA&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)",))
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+'NoneType' object has no attribute 'address'
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=OP%2CKS&format=json&limit=1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f500dd9c898>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)'))
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+'NoneType' object has no attribute 'address'
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+'NoneType' object has no attribute 'address'
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+name 'x' is not defined
+'NoneType' object has no attribute 'address'
+name 'x' is not defined
+name 'x' is not defined
+'NoneType' object has no attribute 'address'
+'NoneType' object has no attribute 'address'
+'NoneType' object has no attribute 'address'
+'NoneType' object has no attribute 'address'
+'NoneType' object has no attribute 'address'
+'NoneType' object has no attribute 'address'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+'NoneType' object has no attribute 'longitude'
+HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=Southern+California.+&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)",))

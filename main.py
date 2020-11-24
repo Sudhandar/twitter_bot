@@ -29,7 +29,7 @@ app_colors = {
 MAX_DF_LENGTH = 100
 def db_connection():
     database_username = 'root'
-    database_password = 'sudhandar'
+    database_password = ''
     database_ip = 'localhost'
     database_name = 'twitter_streaming'
     database_connection = sqlalchemy.create_engine(
@@ -86,7 +86,7 @@ app.layout = html.Div(
                         [   
                             html.H2("Historical Graph"),
                             dcc.Graph(id = 'long_graph', animate = False),
-                            dcc.Interval(id='long_graph_update', interval= 30*1000,n_intervals = 0)
+                            dcc.Interval(id='long_graph_update', interval= 10*1000,n_intervals = 0)
                         ]) ,width = {"size":6}, lg = 6 , sm = 12)
         ]),
         dbc.Row(
@@ -309,5 +309,5 @@ def update_pie_chart(n, sentiment_term):
             f.write(str(e))
             f.write('\n')
 if __name__ == '__main__':
-    app.run_server(host = '0.0.0.0',port= 8050,debug =False)
-    # app.run_server(debug=False)
+    # app.run_server(host = '0.0.0.0',port= 8050,debug =False)
+    app.run_server(debug=True)
