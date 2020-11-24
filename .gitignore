@@ -3,3 +3,4 @@ virtualenv
 *.pyc 
 .env 
 .DS_Store
+twitter_dash_app
